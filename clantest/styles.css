@@ -1,0 +1,146 @@
+/* styles.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('image1.jpg'); /* Replace 'image1.jpg' with the path to your background image */
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #007BFF;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #4a4a4a;
+}
+
+/* Intro Box Styles */
+.introBox {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bevel effect */
+  border: 1px solid #ccc;
+}
+
+.introBox p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.introBox button {
+  font-size: 20px;
+  padding: 15px 30px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Bevel effect */
+}
+
+.introBox button:hover {
+  background-color: #0056b3;
+}
+
+/* Quiz Styles */
+#quiz {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bevel effect */
+  padding: 20px;
+  max-width: 500px;
+  margin-top: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+h2#questionText {
+  margin-bottom: 20px;
+}
+
+/* Answer Options */
+label {
+  display: block;
+  margin-bottom: 15px;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bevel effect */
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Buttons */
+button {
+  font-size: 20px;
+  padding: 15px 30px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Bevel effect */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Results Styles */
+#results {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bevel effect */
+  padding: 20px;
+  max-width: 500px;
+  margin-top: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+#resultClan {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#resultImage {
+  max-width: 200px; /* Adjust as needed */
+  margin-bottom: 20px;
+}
+
+#resultDescription {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+#resultPercentages {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#retakeQuiz {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+#retakeQuiz:hover {
+  background-color: #0056b3;
+}

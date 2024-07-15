@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clan Personality Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="startQuiz">
+    <div class="introBox">
+      <h1>Táljor Clan Sorting exam!</h1>
+      <p>Answer these questions to know which clan in Táljor best fits your personality.</p>
+      <button id="startQuizButton">Start Quiz</button>
+    </div>
+  </div>
+
+  <div id="quiz" style="display: none;">
+    <h2 id="questionText"></h2>
+    <label>
+      <input type="radio" name="answer" value="a">
+      <span id="answerA"></span>
+    </label>
+    <label>
+      <input type="radio" name="answer" value="b">
+      <span id="answerB"></span>
+    </label>
+    <label>
+      <input type="radio" name="answer" value="c">
+      <span id="answerC"></span>
+    </label>
+    <button id="nextQuestion">Next Question</button>
+  </div>
+
+  <div id="results" style="display: none;">
+    <h2 id="resultClan"></h2>
+    <img id="resultImage" src="" alt="Clan Image" style="max-width: 200px; margin-bottom: 20px;" /> <!-- Updated to display clan images -->
+    <p id="resultDescription"></p>  <!-- Description goes here -->
+    <div id="resultPercentages"></div>  <!-- Percentages displayed after the description -->
+    <button id="retakeQuiz">Retake Quiz</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
