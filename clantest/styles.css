@@ -3,7 +3,7 @@
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
-  background-image: url('clantest/images/image1.jpg'); /* Replace 'image1.jpg' with the path to your background image */
+  background-image: url('images/image1.jpg'); /* Replace 'image1.jpg' with the path to your background image */
   background-size: cover; /* Make the background cover the entire page */
   background-repeat: no-repeat; /* Prevent the background from repeating */
   background-attachment: fixed; /* Make the background image fixed relative to the viewport */
