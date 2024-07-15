@@ -1,180 +1,93 @@
-
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  background-image: url('images/image1.jpg'); /* Replace 'image1.jpg' with the path to your background image */
-  background-size: cover; /* Make the background cover the entire page */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent the background from repeating */
-  background-attachment: fixed; /* Make the background image fixed relative to the viewport */
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; /* Center content vertically */
-  margin: 0;
-  padding: 20px;
-  height: 100vh; /* Ensure the body takes up the full height of the viewport */
-  position: relative; /* To position the introBox, quiz, and results divs absolutely */
+  /* Background and layout settings */
 }
 
 /* Intro Box Styles */
 .introBox {
-  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-  border-radius: 10px;
-  padding: 20px;
-  max-width: 600px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bevel effect */
-  border: 1px solid #ccc;
-  position: absolute; /* Position at the bottom */
-  bottom: 20px; /* Distance from the bottom of the viewport */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center horizontally */
+  /* Styling for the intro box */
 }
 
 /* Intro Box Heading and Button */
 .introBox h1 {
-  color: #007BFF;
-  margin-bottom: 20px;
+  /* Heading styles */
 }
 
 .introBox p {
-  font-size: 18px;
-  margin-bottom: 30px;
+  /* Paragraph styles */
 }
 
 .introBox button {
-  font-size: 20px;
-  padding: 15px 30px;
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Bevel effect */
+  /* Button styles */
 }
 
 .introBox button:hover {
-  background-color: #0056b3;
+  /* Hover effect for the button */
 }
 
 /* Quiz Styles */
 #quiz {
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bevel effect */
-  padding: 20px;
-  max-width: 500px;
-  text-align: center;
-  border: 1px solid #ccc;
-  position: absolute; /* Position at the bottom */
-  bottom: 20px; /* Distance from the bottom of the viewport */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center horizontally */
-  display: none; /* Hide initially */
+  /* Styling for the quiz container */
 }
 
 /* Quiz Heading */
 h2#questionText {
-  margin-bottom: 20px;
+  /* Heading styles */
 }
 
 /* Answer Options */
 label {
-  display: block;
-  margin-bottom: 15px;
-  cursor: pointer;
-  background-color: #f8f9fa;
-  border-radius: 5px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bevel effect */
+  /* Label styles for answers */
 }
 
 input[type="radio"] {
-  margin-right: 10px;
+  /* Radio button styles */
 }
 
 /* Buttons */
 button {
-  font-size: 20px;
-  padding: 15px 30px;
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Bevel effect */
+  /* General button styles */
 }
 
 button:hover {
-  background-color: #0056b3;
+  /* Hover effect for buttons */
 }
 
 /* Results Styles */
 #results {
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bevel effect */
-  padding: 20px;
-  max-width: 500px;
-  text-align: center;
-  border: 1px solid #ccc;
-  position: absolute; /* Position at the bottom */
-  bottom: 20px; /* Distance from the bottom of the viewport */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center horizontally */
-  display: none; /* Hide initially */
-  overflow-y: auto; /* Add scroll if the content overflows */
-  max-height: calc(100vh - 40px); /* Ensure the result box doesn't exceed viewport height */
+  /* Styling for the results container */
 }
 
 /* Result Heading */
 #resultClan {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
+  /* Heading styles for results */
 }
 
 /* Result Image */
 #resultImage {
-  max-width: 200px; /* Adjust as needed */
-  margin-bottom: 20px;
+  /* Image styles for results */
 }
 
 /* Result Description */
 #resultDescription {
-  font-size: 16px;
-  margin-bottom: 20px;
-  line-height: 1.5;
+  /* Description styles for results */
 }
 
 /* Result Percentages */
 #resultPercentages {
-  font-size: 18px;
-  margin-bottom: 20px;
+  /* Percentages styles for results */
 }
 
 /* Retake Quiz Button */
 #retakeQuiz {
-  font-size: 20px;
-  padding: 15px 30px;
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Bevel effect */
-  display: inline-block; /* Ensure the button is an inline-block element */
-  margin: 20px auto 0; /* Center the button and add space at the top */
+  /* Styles for the retake quiz button */
 }
 
 #retakeQuiz:hover {
-  background-color: #0056b3;
+  /* Hover effect for the retake quiz button */
 }
 
 /* Center the Retake Quiz Button */
 #results #retakeQuiz {
-  margin: 20px auto 0; /* Center the button and add space at the top */
+  /* Centering the retake quiz button */
 }
