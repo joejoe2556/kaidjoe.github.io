@@ -67,11 +67,11 @@ const clanDescriptions = {
 };
 
 const clanImages = {
-  Grimbone: 'kaidjoe.github.io/clantest
+  Grimbone: 'https://github.com/kaidjoe/kaidjoe.github.io/clantest
 /images/grimbone.png',
-  EmeraldHand: 'kaidjoe.github.io/clantest
+  EmeraldHand: 'https://github.com/kaidjoe/kaidjoe.github.io/clantest
 /images/emeraldhand.png',
-  BubblegumViolence: 'kaidjoe.github.io/clantest
+  BubblegumViolence: 'https://github.com/kaidjoe/kaidjoe.github.io/clantest
 /images/bubblegumviolence.png'
 };
 
