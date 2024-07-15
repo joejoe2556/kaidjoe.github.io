@@ -67,9 +67,9 @@ const clanDescriptions = {
 };
 
 const clanImages = {
-  Grimbone: 'images/grimbone.JPG',
-  EmeraldHand: 'images/emeraldhand.JPG',
-  BubblegumViolence: 'images/bubblegumviolence.JPG'
+  Grimbone: 'clantest/images/grimbone.JPG',
+  EmeraldHand: 'clantest/images/emeraldhand.JPG',
+  BubblegumViolence: 'clantest/images/bubblegumviolence.JPG'
 };
 
 function startQuiz() {
