@@ -63,7 +63,7 @@ const questions = [
 const clanDescriptions = {
   Grimbone: 'We\'re the Grimbone clan, sprung from the charred remnants of the old world. We\'re scavengers, living off the scraps raining from the hoity-toity upper cities. We created our mechs from the rubbish... our survival from the junk. Half Kailantian with an eye into the astral realm, half Trakarian mechanical whizzes. A strange blend, but it works for us. We keep the lands near the unions clean, wrestling with nightmares even those in the upper city softies dare not face. We ain\'t as pious as some, but we know the astral realm\'s a wild place. Evil and good both squat here. We\'re survivors, scavengers, and now, we\'re the last line of defense.',
   EmeraldHand: 'We are Emerald Hand. We once called Markling Upper City our home. We are two halves: one part Kailantian, connected to the astral realm, the other Trakarian, masters of science and machinery. We ventured out to protect and guard what others could not see. For Gaia, for the upper city, we became a moving tribe living amidst the radioactivity. Our new home is a testament to our commitment. Our faith in Gaia binds us, guiding us to see and consult with our spirit guardians.',
-  BubblegumViolence: 'We are Bubblegum Violence. To the sleepy sheepy citizens, we\'re just a traveling circus. Clowns, acrobats? Assassins and freaks? And we never turn down the chance to put on a show. Just like there ain\'t a city that can keep out the rats... there ain\'t a place that we can\'t reach. We don\'t like details. It\'s more fun when things are a surprise. We are Bubblegum Violence, dancing in the eye of the storm, life is a circus of madness and we\'ll always perform! If we\'re going out, we\'re going out with a bang! BOOM! The client returns to see if her dogs are still alive. She requests an encore. She asks if the job is too crazy. But nothing is crazier than we are.',
+  BubblegumViolence: 'We are Bubblegum Violence. To the sleepy sheepy citizens, we\'re just a traveling circus. Clowns, acrobats? Assassins and freaks? And we never turn down the chance to put on a show. Just like there ain\'t a city that can keep out the rats... there ain\'t a place that we can\'t reach. We don\'t like details. It\'s more fun when things are a surprise. We are Bubblegum Violence, dancing in the eye of the storm, life is a circus of madness and we\'ll always perform! If we\'re going out, we\'re going out with a bang! BOOM! The client returns to see if her dogs are still alive. She requests an encore. She asks if the job is too crazy. But nothing is crazier than we are.'
 };
 
 const clanImages = {
@@ -75,26 +75,27 @@ const clanImages = {
 function startQuiz() {
   document.getElementById('startQuiz').style.display = 'none';
   document.getElementById('quiz').style.display = 'block';
-  showQuestion();
+  loadQuestion();
 }
 
-function showQuestion() {
+function loadQuestion() {
   const question = questions[currentQuestionIndex];
   document.getElementById('questionText').textContent = question.question;
-  document.getElementById('answerA').textContent = question.answers.a;
-  document.getElementById('answerB').textContent = question.answers.b;
-  document.getElementById('answerC').textContent = question.answers.c;
+  document.getElementById('answerA').nextElementSibling.textContent = question.answers.a;
+  document.getElementById('answerB').nextElementSibling.textContent = question.answers.b;
+  document.getElementById('answerC').nextElementSibling.textContent = question.answers.c;
 }
 
 function nextQuestion() {
   const selectedAnswer = document.querySelector('input[name="answer"]:checked');
   if (selectedAnswer) {
     const answerValue = selectedAnswer.value;
-    const clan = questions[currentQuestionIndex].clans[answerValue];
-    userScores[clan]++;
+    const currentQuestion = questions[currentQuestionIndex];
+    const clan = currentQuestion.clans[answerValue];
+    userScores[clan] = (userScores[clan] || 0) + 1;
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
-      showQuestion();
+      loadQuestion();
     } else {
       showResults();
     }
@@ -103,31 +104,10 @@ function nextQuestion() {
   }
 }
 
-function showResults() {
-  document.getElementById('quiz').style.display = 'none';
-  document.getElementById('results').style.display = 'block';
-
-  const sortedClans = Object.entries(userScores).sort((a, b) => b[1] - a[1]);
-  const [topClan, topScore] = sortedClans[0];
-  const totalQuestions = questions.length;
-  const percentages = sortedClans.map(([clan, score]) => ({
-    clan,
-    percentage: ((score / totalQuestions) * 100).toFixed(2)
-  }));
-
-  document.getElementById('resultClan').textContent = `${topClan} Clan`;
-  document.getElementById('resultImage').src = clanImages[topClan];  // Set the clan image
-  document.getElementById('resultDescription').textContent = clanDescriptions[topClan];
-  document.getElementById('resultPercentages').innerHTML = percentages.map(({ clan, percentage }) => `
-    <p>${clan}: ${percentage}%</p>
-  `).join('');
-
-  document.getElementById('retakeQuiz').style.display = 'block';
-}
-
 function retakeQuiz() {
-  userScores = { Grimbone: 0, EmeraldHand: 0, BubblegumViolence: 0 };
   currentQuestionIndex = 0;
-  document.getElementById('startQuiz').style.display = 'block';
+  userScores = { Grimbone: 0, EmeraldHand: 0, BubblegumViolence: 0 };
   document.getElementById('results').style.display = 'none';
+  document.getElementById('startQuiz').style.display = 'block';
 }
+
