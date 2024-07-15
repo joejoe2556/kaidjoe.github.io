@@ -3,25 +3,20 @@
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
-  background-image: url('clantest
-/images/unionofarms.jpg'); /* Replace 'image1.jpg' with the path to your background image */
-  background-size: cover;
-  background-position: center;
+  background-image: url('images/image1.jpg'); /* Replace 'image1.jpg' with the path to your background image */
+  background-size: cover; /* Make the background cover the entire page */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  background-attachment: fixed; /* Make the background image fixed relative to the viewport */
   color: #333;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; /* Center content vertically */
   margin: 0;
   padding: 20px;
-}
-
-h1 {
-  color: #007BFF;
-  margin-bottom: 20px;
-}
-
-h2 {
-  color: #4a4a4a;
+  height: 100vh; /* Ensure the body takes up the full height of the viewport */
+  position: relative; /* To position the introBox, quiz, and results divs absolutely */
 }
 
 /* Intro Box Styles */
@@ -33,6 +28,10 @@ h2 {
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bevel effect */
   border: 1px solid #ccc;
+  position: absolute; /* Position at the bottom */
+  bottom: 20px; /* Distance from the bottom of the viewport */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
 }
 
 .introBox p {
@@ -62,9 +61,13 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bevel effect */
   padding: 20px;
   max-width: 500px;
-  margin-top: 20px;
   text-align: center;
   border: 1px solid #ccc;
+  position: absolute; /* Position at the bottom */
+  bottom: 20px; /* Distance from the bottom of the viewport */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  display: none; /* Hide initially */
 }
 
 h2#questionText {
@@ -110,9 +113,13 @@ button:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bevel effect */
   padding: 20px;
   max-width: 500px;
-  margin-top: 20px;
   text-align: center;
   border: 1px solid #ccc;
+  position: absolute; /* Position at the bottom */
+  bottom: 20px; /* Distance from the bottom of the viewport */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  display: none; /* Hide initially */
 }
 
 #resultClan {
