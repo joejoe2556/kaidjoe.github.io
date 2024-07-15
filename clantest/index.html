@@ -1,45 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clan Personality Quiz</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clan Personality Quiz</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="startQuiz">
-    <div class="introBox">
-      <h1>Welcome to the T'aljor Clan Matching Quiz</h1>
-      <p>Answer these questions to know which Táljor clan best suits your personality. (this is an unofficial fan-made test)</p>
-      <button id="startQuizButton">Start Quiz</button>
+    <div id="startQuiz" class="quiz-container">
+        <h1>Welcome to the Clan Personality Quiz!</h1>
+        <p>Answer these questions to know which clan in Táljor best fits your personality.</p>
+        <button id="startQuizButton">Start Quiz</button>
     </div>
-  </div>
+    
+    <div id="quiz" class="quiz-container" style="display: none;">
+        <div id="questionBox">
+            <p id="questionText"></p>
+            <label><input type="radio" name="answer" value="a"> <span id="answerA"></span></label><br>
+            <label><input type="radio" name="answer" value="b"> <span id="answerB"></span></label><br>
+            <label><input type="radio" name="answer" value="c"> <span id="answerC"></span></label><br>
+        </div>
+        <button id="nextQuestion">Next Question</button>
+    </div>
+    
+    <div id="results" class="quiz-container" style="display: none;">
+        <h1>Your Clan Result</h1>
+        <h2 id="resultClan"></h2>
+        <img id="resultImage" src="" alt="Clan Image" style="width: 100%; max-width: 300px;">
+        <p id="resultDescription"></p>
+        <div id="resultPercentages"></div>
+        <button id="retakeQuiz" style="display: none;">Retake Quiz</button>
+    </div>
 
-  <div id="quiz" style="display: none;">
-    <h2 id="questionText"></h2>
-    <label>
-      <input type="radio" name="answer" value="a">
-      <span id="answerA"></span>
-    </label>
-    <label>
-      <input type="radio" name="answer" value="b">
-      <span id="answerB"></span>
-    </label>
-    <label>
-      <input type="radio" name="answer" value="c">
-      <span id="answerC"></span>
-    </label>
-    <button id="nextQuestion">Next Question</button>
-  </div>
-
-  <div id="results" style="display: none;">
-    <h2 id="resultClan"></h2>
-    <img id="resultImage" src="" alt="Clan Image" style="max-width: 200px; margin-bottom: 20px;" /> <!-- Updated to display clan images -->
-    <p id="resultDescription"></p>  <!-- Description goes here -->
-    <div id="resultPercentages"></div>  <!-- Percentages displayed after the description -->
-    <button id="retakeQuiz">Retake Quiz</button>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
