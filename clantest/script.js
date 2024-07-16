@@ -57,6 +57,22 @@ const questions = [
     question: "What is your preferred role in a group setting?",
     answers: { a: 'The leader who guides and supports others.', b: 'The strategist who plans and implements practical solutions.', c: 'The entertainer who keeps the group engaged and motivated.' },
     clans: { a: 'EmeraldHand', b: 'Grimbone', c: 'BubblegumViolence' }
+  },
+  // Tie-breaker questions
+  {
+    question: "If you could change one thing about the world, what would it be?",
+    answers: { a: 'Make the world a more compassionate and caring place.', b: 'Create opportunities for everyone to be self-reliant and resourceful.', c: 'Bring joy and excitement to people’s lives.' },
+    clans: { a: 'EmeraldHand', b: 'Grimbone', c: 'BubblegumViolence' }
+  },
+  {
+    question: "What is your biggest strength?",
+    answers: { a: 'Empathy and the ability to connect with others.', b: 'Resourcefulness and the ability to overcome obstacles.', c: 'Creativity and the ability to inspire others.' },
+    clans: { a: 'EmeraldHand', b: 'Grimbone', c: 'BubblegumViolence' }
+  },
+  {
+    question: "Which quality do you admire most in others?",
+    answers: { a: 'Kindness and the ability to help others.', b: 'Ingenuity and the ability to solve problems.', c: 'Charisma and the ability to entertain.' },
+    clans: { a: 'EmeraldHand', b: 'Grimbone', c: 'BubblegumViolence' }
   }
 ];
 
@@ -84,6 +100,9 @@ function showQuestion() {
   document.getElementById('answerA').textContent = question.answers.a;
   document.getElementById('answerB').textContent = question.answers.b;
   document.getElementById('answerC').textContent = question.answers.c;
+  // Ensure the text color is black for the questions
+  document.getElementById('questionText').style.color = 'black';
+  document.querySelectorAll('label').forEach(label => label.style.color = 'black');
 }
 
 function nextQuestion() {
@@ -93,41 +112,67 @@ function nextQuestion() {
     const clan = questions[currentQuestionIndex].clans[answerValue];
     userScores[clan]++;
     currentQuestionIndex++;
+    
+    // Debugging: log currentQuestionIndex and question length
+    console.log('Current question index:', currentQuestionIndex);
+    console.log('Total questions:', questions.length);
+
     if (currentQuestionIndex < questions.length) {
       showQuestion();
     } else {
-      showResults();
+      handleTieBreaker();
     }
   } else {
     alert('Please select an answer.');
   }
 }
 
-function showResults() {
-  document.getElementById('quiz').style.display = 'none';
-  document.getElementById('results').style.display = 'block';
+function handleTieBreaker() {
+  const maxScore = Math.max(...Object.values(userScores));
+  const leadingClans = Object.keys(userScores).filter(clan => userScores[clan] === maxScore);
+  
+  console.log('Leading clans for tie-breaker:', leadingClans); // Debugging: log leading clans
 
-  const sortedClans = Object.entries(userScores).sort((a, b) => b[1] - a[1]);
-  const [topClan, topScore] = sortedClans[0];
-  const totalQuestions = questions.length;
-  const percentages = sortedClans.map(([clan, score]) => ({
-    clan,
-    percentage: ((score / totalQuestions) * 100).toFixed(2)
-  }));
-
-  document.getElementById('resultClan').textContent = `${topClan} Clan`;
-  document.getElementById('resultImage').src = clanImages[topClan];  // Set the clan image
-  document.getElementById('resultDescription').textContent = clanDescriptions[topClan];
-  document.getElementById('resultPercentages').innerHTML = percentages.map(({ clan, percentage }) => `
-    <p>${clan}: ${percentage}%</p>
-  `).join('');
-
-  document.getElementById('retakeQuiz').style.display = 'block';
+  if (leadingClans.length === 1) {
+    showResult(leadingClans[0]);
+  } else {
+    // Show the first tie-breaker question
+    document.getElementById('questionText').textContent = questions[currentQuestionIndex].question;
+    document.getElementById('answerA').textContent = questions[currentQuestionIndex].answers.a;
+    document.getElementById('answerB').textContent = questions[currentQuestionIndex].answers.b;
+    document.getElementById('answerC').textContent = questions[currentQuestionIndex].answers.c;
+    document.getElementById('nextQuestion').style.display = 'block';
+  }
 }
 
 function retakeQuiz() {
   userScores = { Grimbone: 0, EmeraldHand: 0, BubblegumViolence: 0 };
   currentQuestionIndex = 0;
-  document.getElementById('startQuiz').style.display = 'block';
   document.getElementById('results').style.display = 'none';
+  document.getElementById('startQuiz').style.display = 'block';
+}
+
+function showResult(clan) {
+  console.log('Final Clan Result:', clan); // Debugging: log final clan result
+  const totalQuestions = questions.length;
+  const percentages = Object.fromEntries(
+    Object.entries(userScores).map(([c, s]) => [c, (s / totalQuestions * 100).toFixed(2)])
+  );
+
+  console.log('Clan Percentages:', percentages); // Debugging: log clan percentages
+
+  document.getElementById('resultClan').textContent = `You are part of the ${clan} clan!`;
+  document.getElementById('resultImage').src = clanImages[clan];
+  document.getElementById('resultDescription').textContent = clanDescriptions[clan];
+
+  const resultPercentages = `
+    <p>Grimbone: ${percentages.Grimbone}%</p>
+    <p>Emerald Hand: ${percentages.EmeraldHand}%</p>
+    <p>Bubblegum Violence: ${percentages.BubblegumViolence}%</p>
+  `;
+
+  document.getElementById('resultPercentages').innerHTML = resultPercentages;
+
+  document.getElementById('quiz').style.display = 'none';
+  document.getElementById('results').style.display = 'block';
 }
