@@ -161,7 +161,7 @@ function showResult(clan) {
 
   console.log('Clan Percentages:', percentages); // Debugging: log clan percentages
 
-  document.getElementById('resultClan').textContent = `You are part of the ${clan} clan!`;
+  document.getElementById('resultClan').textContent = `You are best suited for the ${clan} clan!`;
   document.getElementById('resultImage').src = clanImages[clan];
   document.getElementById('resultDescription').textContent = clanDescriptions[clan];
 
