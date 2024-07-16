@@ -5,12 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clan Personality Quiz</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add this style to ensure questions are in black color */
+    #questionText {
+      color: black;
+    }
+  </style>
 </head>
 <body>
   <div id="startQuiz">
     <div class="introBox">
-      <h1>Táljor Clan Suitability Quiz </h1>
-      <p>Answer these questions to know which clan in Táljor best suits your personality. (this is a fan-made quiz) </p>
+      <h1>What Táljor Clan should you belong to?</h1>
+      <p>Answer these questions to know which clan in Táljor best suits your personality. </p>
       <button id="startQuizButton">Start Quiz</button>
     </div>
   </div>
@@ -34,9 +40,9 @@
 
   <div id="results" style="display: none;">
     <h2 id="resultClan"></h2>
-    <img id="resultImage" src="" alt="Clan Image" style="max-width: 200px; margin-bottom: 20px;" /> <!-- Updated to display clan images -->
-    <p id="resultDescription"></p>  <!-- Description goes here -->
-    <div id="resultPercentages"></div>  <!-- Percentages displayed after the description -->
+    <img id="resultImage" src="" alt="Clan Image" style="max-width: 400px; margin-bottom: 20px;" />
+    <p id="resultDescription"></p>
+    <div id="resultPercentages"></div>
     <button id="retakeQuiz">Retake Quiz</button>
   </div>
 
