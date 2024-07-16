@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clan Personality Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add this style to ensure questions are in black color */
+    #questionText {
+      color: black;
+    }
+    label {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div id="startQuiz">
+    <div class="introBox">
+      <h1>Congratulations Lieutenant!</h1>
+      <p>You have been deemed worthy by the upper city worthy to pilot a generation 7 particle manipulation suit aka sparksuit. Join the ranks of a little less than 6000 fighter pilots in the upcoming war against the void. We just have a screening test to know which chassis type and primary weapon is best suited for you. Proceed.</p>
+      <button id="startQuizButton">Start Quiz</button>
+    </div>
+  </div>
+
+  <div id="quiz" style="display: none;">
+    <h2 id="questionText"></h2>
+    <label>
+      <input type="radio" name="answer" value="A">
+      <span id="answerA"></span>
+    </label>
+    <label>
+      <input type="radio" name="answer" value="B">
+      <span id="answerB"></span>
+    </label>
+    <label>
+      <input type="radio" name="answer" value="C">
+      <span id="answerC"></span>
+    </label>
+    <button id="nextQuestion">Next Question</button>
+  </div>
+
+  <div id="results" style="display: none;">
+    <h2>Your Results</h2>
+    <div id="resultChassis"></div>
+    <div id="resultWeapons"></div>
+    <button id="retakeQuiz">Retake Quiz</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
