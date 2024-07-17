@@ -30,7 +30,9 @@ const questions = [
   { text: "How do you feel about high-stakes situations?", options: { A: "Thrilled and excited.", B: "Calm and analytical.", C: "Focused on team survival." }, score: { A: "Light", B: "Medium", C: "Heavy" } },
   { text: "How do you prefer to be recognized for your contributions?", options: { A: "For my individual achievements.", B: "For my strategic impact.", C: "For my support to the team." }, score: { A: "Light", B: "Medium", C: "Heavy" } },
   { text: "When facing a new opponent, what’s your strategy?", options: { A: "Dive in and confront them.", B: "Observe and plan an approach.", C: "Prepare to support your team and adjust." }, score: { A: "Light", B: "Medium", C: "Heavy" } },
-  { text: "How do you approach learning new skills?", options: { A: "Hands-on experience and experimentation.", B: "Research and practice.", C: "Training with others and feedback." }, score: { A: "Light", B: "Medium", C: "Heavy" } }
+  { text: "What kind of environment do you thrive in?", options: { A: "Fast-paced and intense.", B: "Structured and strategic.", C: "Supportive and team-oriented." }, score: { A: "Light", B: "Medium", C: "Heavy" } },
+  { text: "How do you handle being outnumbered?", options: { A: "Fight harder and faster.", B: "Think and plan strategically.", C: "Protect and support the team." }, score: { A: "Light", B: "Medium", C: "Heavy" } },
+  { text: "How do you approach in-game communication?", options: { A: "Quick and direct commands.", B: "Strategic discussions.", C: "Supportive and encouraging." }, score: { A: "Light", B: "Medium", C: "Heavy" } }
 ];
 
 function startQuiz() {
@@ -81,14 +83,6 @@ function calculateResults() {
     return { type, percentage: (userScores[type] / totalChassisScore * 100).toFixed(2) };
   });
 
-  // Display the chassis results
-  let resultChassisHTML = '<h3>Chassis Type:</h3><ul>';
-  chassisPercentages.forEach(({ type, percentage }) => {
-    resultChassisHTML += `<li>${type}: ${percentage}%</li>`;
-  });
-  resultChassisHTML += '</ul>';
-  document.getElementById('resultChassis').innerHTML = resultChassisHTML;
-
   // Determine the highest score for the guns
   const guns = Object.keys(gunScores);
   const sortedGuns = guns.sort((a, b) => gunScores[b] - gunScores[a]);
@@ -99,6 +93,14 @@ function calculateResults() {
     return { weapon, percentage: (gunScores[weapon] / totalGunScore * 100).toFixed(2) };
   });
 
+  // Display the chassis results
+  let resultChassisHTML = '<h3>Chassis Type:</h3><ul>';
+  chassisPercentages.forEach(({ type, percentage }) => {
+    resultChassisHTML += `<li>${type}: ${percentage}%</li>`;
+  });
+  resultChassisHTML += '</ul>';
+  document.getElementById('resultChassis').innerHTML = resultChassisHTML;
+
   // Display the gun results
   let resultWeaponsHTML = '<h3>Gun Type:</h3><ul>';
   gunPercentages.forEach(({ weapon, percentage }) => {
@@ -106,6 +108,19 @@ function calculateResults() {
   });
   resultWeaponsHTML += '</ul>';
   document.getElementById('resultWeapons').innerHTML = resultWeaponsHTML;
+
+  // Display the images and summary
+  const chassisImage = `<img src="images/${topChassis}.jpg" alt="${topChassis} Chassis">`;
+  const gunImage = `<img src="images/${topGun}.png" alt="${topGun} Gun">`;
+  const summaryText = `We have thoroughly assessed your skills and temperament and think a ${topChassis} chassis is best for you. We also think you will do well with a ${topGun} as your primary weapon.`;
+
+  document.getElementById('resultImages').innerHTML = `
+    <div style="display: flex; justify-content: space-between;">
+      <div>${gunImage}</div>
+      <div>${chassisImage}</div>
+    </div>
+    <p>${summaryText}</p>
+  `;
 }
 
 function retakeQuiz() {

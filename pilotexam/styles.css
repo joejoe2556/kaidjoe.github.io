@@ -1,4 +1,5 @@
-/* General Styles */
+/* styles.css */
+
 body {
   font-family: Arial, sans-serif;
   background-image: url('images/image1.jpg'); /* Replace 'image1.jpg' with the path to your background image */
@@ -6,252 +7,83 @@ body {
   background-repeat: no-repeat; /* Prevent the background from repeating */
   background-attachment: fixed; /* Make the background image fixed relative to the viewport */
   background-position: center; /* Center the background image */
-  color: #fff;
-  text-align: center;
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
+  font-size: 20px
 }
 
-/* Title */
-h1 {
-  color: #007BFF;
-  margin-bottom: 20px;
-}
-
-/* Heading 2 */
-h2 {
-  color: #4a4a4a;
-}
-
-/* Intro Box Styles */
-.introBox {
-  background-color: #ffffff; /* Solid white background */
-  border-radius: 10px;
+.introBox, #quiz, #results {
+  background: #fff;
   padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Bevel effect */
+  border: 5px solid #007BFF; /* Outline color */
+  width: 80%;
   max-width: 600px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bevel effect */
-  border: 1px solid #ccc;
-  color: #000; /* Black text color */
+  margin-top: 30px;
 }
 
-.introBox p {
-  font-size: 18px;
-  margin-bottom: 30px;
+h1, h2, h3 {
+  color: #333;
 }
 
-.introBox button {
-  font-size: 20px;
-  padding: 15px 30px;
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Bevel effect */
-}
-
-.introBox button:hover {
-  background-color: #0056b3;
-}
-
-/* Quiz Styles */
-#quiz {
-  background-color: #ffffff; /* Solid white background */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bevel effect */
-  padding: 20px;
-  max-width: 500px;
-  margin-top: 20px;
-  text-align: center;
-  border: 1px solid #ccc;
-  color: #000; /* Black text color */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Quiz Question */
-h2#questionText {
-  margin-bottom: 20px;
-}
-
-/* Answer Options */
 label {
   display: block;
-  margin-bottom: 15px;
-  cursor: pointer;
-  background-color: #f8f9fa;
-  border-radius: 5px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bevel effect */
+  margin: 15px 0;
+  font-size: 18px;
+  color: #333; /* Ensure label text color is black */
 }
 
-input[type="radio"] {
-  margin-right: 10px;
-}
-
-/* Buttons */
 button {
-  font-size: 20px;
-  padding: 15px 30px;
   background-color: #007BFF;
-  color: #fff;
+  color: white;
   border: none;
-  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Bevel effect */
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
 button:hover {
   background-color: #0056b3;
 }
-
-/* Results Styles */
 #results {
-  background-color: #ffffff; /* Solid white background */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bevel effect */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   padding: 20px;
-  max-width: 500px;
-  margin-top: 20px;
-  text-align: center;
-  border: 1px solid #ccc;
-  color: #000; /* Black text color */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 900px; /* Increase width to accommodate images */
+  margin: 20px;
+}
+#resultChassis, #resultWeapons {
+  text-align: left; /* Ensure result text is aligned left */
 }
 
-#resultClan {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
+.result-description {
+  margin-top: 20px; /* Add margin for separation */
 }
 
-#resultImage {
-  max-width: 200px; /* Adjust as needed */
-  margin-bottom: 20px;
-}
-
-#resultDescription {
-  font-size: 16px;
-  margin-bottom: 20px;
-  line-height: 1.5;
-}
-
-#resultPercentages {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-#retakeQuiz {
-  background-color: #007BFF;
-  color: #fff;
-}
-
-#retakeQuiz:hover {
-  background-color: #0056b3;
-}
-
-/* Centering Sections */
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#startQuiz,
-#quiz,
-#tieBreak,
-#tieBreakResults,
-#results {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Tie Break Styles */
-#tieBreak {
-  display: none;
-}
-
-#tieBreakQuestion {
-  background-color: #ffffff; /* Solid white background */
-  border-radius: 10px;
-  padding: 20px;
-  max-width: 500px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bevel effect */
-  border: 1px solid #ccc;
-  color: #000; /* Black text color */
-}
-
-/* Tie Break Button */
-#nextTieQuestion {
-  font-size: 20px;
-  padding: 15px 30px;
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
+.resultImages {
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: contain;
   border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Bevel effect */
-  margin-top: 10px;
+  margin-right: 20px; /* Add margin for spacing */
 }
 
-#nextTieQuestion:hover {
-  background-color: #0056b3;
-}
-
-#retakeQuizFinal {
-  font-size: 20px;
-  padding: 15px 30px;
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
+.result-images img {
+  max-width: 200px; /* Adjust image size as needed */
   border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Bevel effect */
-  margin-top: 10px;
-}
-
-#retakeQuizFinal:hover {
-  background-color: #0056b3;
-}
-
-/* Centering for Tie Break Results */
-#tieBreakResults {
-  background-color: #ffffff; /* Solid white background */
-  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bevel effect */
-  padding: 20px;
-  max-width: 500px;
-  text-align: center;
-  border: 1px solid #ccc;
-  color: #000; /* Black text color */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Tie Break Results Button */
-#retakeQuizFinal {
-  background-color: #007BFF;
-  color: #fff;
-}
-
-#retakeQuizFinal:hover {
-  background-color: #0056b3;
 }
