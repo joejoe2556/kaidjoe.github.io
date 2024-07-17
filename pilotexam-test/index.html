@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clan Personality Quiz</title>
+  <title>Chassis and Weapons test</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* Add this style to ensure questions are in black color */
     #questionText {
       color: black;
     }
@@ -19,8 +18,8 @@
   <div id="startQuiz">
     <div class="introBox">
       <h1>Congratulations Lieutenant!</h1>
-      <p>You have been deemed worthy by the upper cities to pilot a generation 7 particle manipulation exosuit aka sparksuit. Join the ranks of a little less than 6000 fighter pilots in the upcoming war against the void. <p> 
-This is a screening test to know which chassis type and primary weapon best suits your play syle. Please proceed.</p>
+      <p>You have been deemed worthy by the upper cities to pilot a generation 7 particle manipulation exosuit aka sparksuit. Join the ranks of a little less than 6000 fighter pilots in the upcoming war against the void.</p>
+      <p>I am Officer Kiyoko and I'm here to guide you in this test to determine which chassis type and primary weapon best suits your play style. Please proceed.</p>
       <button id="startQuizButton">Start Quiz</button>
     </div>
   </div>
@@ -44,6 +43,13 @@ This is a screening test to know which chassis type and primary weapon best suit
 
   <div id="results" style="display: none;">
     <h2>Your Results</h2>
+    <div id="resultSummary"></div>
+    <div id="resultImages">
+      <img id="chassisImage" src="" alt="Chassis Image" class="resultImage">
+      <img id="gunImage" src="" alt="Gun Image" class="resultImage">
+
+    </div>
+    <div style="clear: both;"></div>
     <div id="resultChassis"></div>
     <div id="resultWeapons"></div>
     <button id="retakeQuiz">Retake Quiz</button>
