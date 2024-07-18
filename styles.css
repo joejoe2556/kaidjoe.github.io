@@ -99,14 +99,14 @@ body {
 /* Video container styles */
 #video-container {
     position: center;
-    width: 100%; /* Ensure video container fills its parent */
+    width: 50%; /* Ensure video container fills its parent */
     max-width: 50%; /* Ensure video can scale down */
     margin-bottom: 20px; /* Optional: Adjust spacing */
 }
 
 /* Video styles */
 #video-container video {
-    width: 100%; /* Ensure video fills its container */
+    width: 50%; /* Ensure video fills its container */
     display: block;
     border-radius: 8px; /* Optional: Add border radius */
 }
