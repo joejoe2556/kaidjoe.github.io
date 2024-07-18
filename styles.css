@@ -30,6 +30,9 @@ body {
     padding: 20px;
     text-align: center;
 }
+.header h1 {
+    font-size: 2em; /* Default font size */
+}
 .container {
     display: flex;
     justify-content: center;
@@ -71,14 +74,39 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .content {
-        width: 90%;
+        width: 60%;
     }
     .header h1 {
-        font-size: 1.5em;
+        font-size: 1em;
+    
     }
+
+.content h2 {
+    margin-top: 0;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 0.75em; /* Example: Change to desired font size */
+    font-weight: bold; /* Example: Adjust font weight */
+}
     .content a {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
     }
+}
+
+/* Video container styles */
+#video-container {
+    position: center;
+    width: 100%; /* Ensure video container fills its parent */
+    max-width: 50%; /* Ensure video can scale down */
+    margin-bottom: 20px; /* Optional: Adjust spacing */
+}
+
+/* Video styles */
+#video-container video {
+    width: 100%; /* Ensure video fills its container */
+    display: block;
+    border-radius: 8px; /* Optional: Add border radius */
 }
