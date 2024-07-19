@@ -2,8 +2,8 @@
 body {
   font-family: Arial, sans-serif;
   background-image: url('images/image1.jpg'); /* Replace 'image1.jpg' with the path to your background image */
-  background-repeat: repeat;
-  background-size: 30% 35%; /* Scales the background image down by 50% */
+  background-repeat: no-repeat;
+  background-size: cover; /* Scales the background image down by 50% */
   background-attachment: fixed; /* Make the background image fixed relative to the viewport */
   background-position: center; /* Center the background image */
   color: #fff;
