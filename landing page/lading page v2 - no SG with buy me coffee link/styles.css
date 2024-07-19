@@ -14,6 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh; /* Full viewport height */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }  
 
 .header {
@@ -40,6 +41,8 @@ body {
   align-items: center;
   flex: 1;
   padding-top: 80px; /* Add padding to avoid content being overlapped by header */
+  width: 100%;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 .content {
@@ -52,6 +55,7 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 600px;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 .content h2 {
@@ -71,13 +75,12 @@ body {
   background-color: #fdba2f;
   border-radius: 4px;
   margin-bottom: 10px;
-  width: calc(100% - 20px);
+  width: 100%;
   text-align: center;
   font-family: Arial, sans-serif;
   font-size: 1.3em; /* Example: Adjust font size */
   font-weight: normal; /* Example: Adjust font weight */
-  margin-left: 10px;
-  margin-right: 10px;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 .content a:hover {
