@@ -17,10 +17,12 @@ body {
   height: 100vh; /* Full viewport height */
 }
 
+
 /* Title */
-h1 {
+h1.title {
   color: #007BFF;
   margin-bottom: 20px;
+  font-size: 24px; /* Adjust this value to change the font size */
 }
 
 /* Heading 2 */
