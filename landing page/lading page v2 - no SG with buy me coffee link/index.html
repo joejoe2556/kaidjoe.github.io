@@ -23,17 +23,16 @@
     </div>
 
     <a href="https://www.paypal.com/paypalme/josiahmarasigan" class="buy-me-coffee">☕ Buy me coffee</a>
-   <a href="#" id="copy-text-link" onclick="copyText(event)" class="copy-text">Click to copy my ronin wallet ;) </a>
-
-   <script>
+    <a href="#" id="copy-address-link" onclick="copyAddress(event)" class="copy-text">Click to copy my Ronin address</a>
+  <script>
      
-        function copyText(event) {
+  function copyAddress(event) {
             event.preventDefault();
-            const textToCopy = event.target.innerText;
-            navigator.clipboard.writeText(textToCopy).then(() => {
-                alert('Text copied to clipboard: ' + textToCopy);
+            const address = '0xf5ef36ef681c1c470d2f4337ca2cef1f74d757e8';
+            navigator.clipboard.writeText(address).then(() => {
+                alert('Ronin address copied to clipboard: ' + address);
             }).catch(err => {
-                console.error('Failed to copy text: ', err);
+                console.error('Failed to copy address: ', err);
             });
         }
     </script>
