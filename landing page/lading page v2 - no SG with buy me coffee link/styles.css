@@ -59,7 +59,7 @@ body {
   color: #fff;
   text-align: center;
   font-family: Arial, sans-serif;
-  font-size: 1.2em; /* Default font size */
+  font-size: 1.5em; /* Default font size */
   margin-bottom: 15px; /* Example: Adjust spacing */
 }
 
@@ -74,7 +74,7 @@ body {
   width: calc(100% - 20px);
   text-align: center;
   font-family: Arial, sans-serif;
-  font-size: 1em; /* Example: Adjust font size */
+  font-size: 1.3em; /* Example: Adjust font size */
   font-weight: normal; /* Example: Adjust font weight */
   margin-left: 10px;
   margin-right: 10px;
@@ -87,15 +87,15 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
   .content {
-    width: 60%;
+    width: 80%;
   }
 
   .header h1 {
-    font-size: 1.5em; /* Example: Adjust font size for smaller screens */
+    font-size: 2em; /* Example: Adjust font size for smaller screens */
   }
 
   .content h2 {
-    font-size: 1em; /* Example: Adjust font size for smaller screens */
+    font-size: 1.5em; /* Example: Adjust font size for smaller screens */
   }
 
   .content a {
@@ -118,23 +118,45 @@ body {
   display: block;
   border-radius: 8px; /* Optional: Add border radius */
 }
+
 /* Buy Me Coffee Button Styles */
 .buy-me-coffee {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #0000;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-size: 1em;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
+  position: fixed;
+  bottom: 40px; /* Adjusted to leave space for the copy text link */
+  right: 20px;
+  background-color: #0000;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 0.7em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
 }
 
 .buy-me-coffee:hover {
-    background-color: #e0a82d;
-    text-decoration: underline;
+  background-color: #e0a82d;
+  text-decoration: underline;
+}
+
+/* Copy Text Link Styles */
+.copy-text {
+  position: fixed;
+  bottom: 20px; /* Positioned below the buy me coffee button */
+  right: 20px;
+  background-color: #0000;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 0.7em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.copy-text:hover {
+  background-color: #e0a82d;
+  text-decoration: underline;
 }
