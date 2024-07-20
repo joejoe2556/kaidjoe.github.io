@@ -1,4 +1,13 @@
 1. Change name of landing page to KAIDRO SPIRIT GUIDE
-2. Include What is Kaidro? (introduction to the IP) - same format as video. Recycle script.
-2. Where do I begin? (onboarding process) - step by step with links
-3. 
+
+2 ADD PAGES
+      A. Include What is Kaidro? (introduction to the IP) - same format as video. Recycle script.
+      Where do I begin? (onboarding process) - step by step with links
+      a. I want to join but I don't want to pay. (FREE) - create steam and ronin wallet, 
+      b. I want to join and buy a single NFT for access to premium experiences (PAID)
+      c. I plant to buy multiple NFTs to participate in the $KDR rewards (PAID)
+
+4. Update me on the latest changes (Page with just all updates, Kaidro twitter and joejoe)
+5. I want to get to know the community (whales, prominent community members)
+6. I want to know my clan. 
+7. I want to 
