@@ -67,7 +67,6 @@ button:hover {
   font-size: 0.7em;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s;
-  z-index: 1000; /* Ensure button is on top */
 }
 
 .buy-me-coffee:hover,
