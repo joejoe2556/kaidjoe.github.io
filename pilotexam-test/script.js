@@ -111,12 +111,10 @@ function calculateResults() {
 
   // Display the images and summary
   const chassisImage = `<img src="images/${topChassis}.jpg" alt="${topChassis} Chassis">`;
-  const gunImage = `<img src="images/${topGun}.png" alt="${topGun} Gun">`;
   const summaryText = `We have thoroughly assessed your skills and temperament and think a ${topChassis} chassis is best for you. We also think you will do well with a ${topGun} as your primary weapon.`;
 
   document.getElementById('resultImages').innerHTML = `
     <div style="display: flex; justify-content: space-between;">
-      <div>${gunImage}</div>
       <div>${chassisImage}</div>
     </div>
     <p>${summaryText}</p>
