@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Onboarding </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1> Welcome to Kaidro!</h1>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h2> Please choose the best option for you</h2>
+            <a href="https://kaidjoe.github.io/onboarding/free"> I don't like to pay for an NFT. I want to play the game and get involved with Kaidro for FREE. </a>
+            <a href="https://kaidjoe.github.io/onboarding/nft"> I want to buy NFTs, I want to get $KDR, I don't mind spending to get the premium experience. </a>
+        </div>
+    </div>
+
+    <a href="https://www.paypal.com/paypalme/josiahmarasigan" class="buy-me-coffee">☕ Buy me coffee</a>
+    <a href="#" id="copy-address-link" onclick="copyAddress(event)" class="copy-text">Click to copy my Ronin address</a>
+ 
+  <script>
+   
+  function copyAddress(event) {
+            event.preventDefault();
+            const address = '0xf5ef36ef681c1c470d2f4337ca2cef1f74d757e8';
+            navigator.clipboard.writeText(address).then(() => {
+                alert('Ronin address copied to clipboard: ' + address);
+            }).catch(err => {
+                console.error('Failed to copy address: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
