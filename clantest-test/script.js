@@ -9,70 +9,166 @@ let userScores = { Grimbone: 0, EmeraldHand: 0, BubblegumViolence: 0 };
 
 const questions = [
   {
-    question: "What motivates you the most?",
-    answers: { a: 'Helping others and making a positive impact on the community.', b: 'Overcoming challenges and finding new ways to survive and thrive.', c: 'Creating memorable experiences and having fun.' },
-    clans: { a: 'EmeraldHand', b: 'Grimbone', c: 'BubblegumViolence' }
+    question: "What appeals to you the most?",
+    answers: { a: 'Good performance', b: 'Good leadership' , c: 'Innovation'},
+    clans: { a: 'BubblegumViolence', b: 'EmeraldHand', c: 'Grimbone' }
   },
   {
     question: "How do you prefer to spend your free time?",
-    answers: { a: 'Volunteering for community service or spending time in nature.', b: 'Working on survival skills or tinkering with new inventions.', c: 'Attending events or trying out exciting activities.' },
-    clans: { a: 'EmeraldHand', b: 'Grimbone', c: 'BubblegumViolence' }
+    answers: {
+      a: 'Volunteering for community service or spending time in nature.',
+      b: 'Attending events or trying out exciting activities.',
+      c: 'Tinkering with new inventions, discovering things.'
+    },
+    clans: {
+      a: 'EmeraldHand',
+      b: 'BubblegumViolence',
+      c: 'Grimbone'
+    }
   },
   {
     question: "What is your approach to problem-solving?",
-    answers: { a: 'Collaborating with others and seeking advice from mentors.', b: 'Adapting to the situation and using innovative techniques.', c: 'Thinking outside the box and using creativity.' },
-    clans: { a: 'EmeraldHand', b: 'Grimbone', c: 'BubblegumViolence' }
+    answers: {
+      a: 'Thinking outside the box and using creativity.',
+      b: 'Adapting to the situation and finding new approaches.',
+      c: 'Collaborating with others and seeking advice from mentors.'
+    },
+    clans: {
+      a: 'BubblegumViolence',
+      b: 'Grimbone',
+      c: 'EmeraldHand'
+    }
   },
   {
     question: "Which environment appeals to you the most?",
-    answers: { a: 'Quiet parks and nature reserves.', b: 'Harsh landscapes that test your resilience and ingenuity.', c: 'Festivals and bustling urban areas.' },
-    clans: { a: 'EmeraldHand', b: 'Grimbone', c: 'BubblegumViolence' }
+    answers: {
+      a: 'Quiet parks and nature reserves.',
+      b: 'Festivals and bustling urban areas.',
+      c: 'Harsh landscapes.'
+    },
+    clans: {
+      a: 'EmeraldHand',
+      b: 'BubblegumViolence',
+      c: 'Grimbone'
+    }
   },
   {
     question: "What is your ideal form of adventure?",
-    answers: { a: 'Participating in community outreach or conservation projects.', b: 'Exploring abandoned places or testing survival scenarios.', c: 'Going to music festivals or extreme sports events.' },
-    clans: { a: 'EmeraldHand', b: 'Grimbone', c: 'BubblegumViolence' }
+    answers: {
+      a: 'Going to music festivals or extreme sports events.',
+      b: 'Exploring abandoned places or testing survival scenarios.',
+      c: 'Participating in community outreach or conservation projects.'
+    },
+    clans: {
+      a: 'BubblegumViolence',
+      b: 'Grimbone',
+      c: 'EmeraldHand'
+    }
   },
   {
     question: "How do you handle challenges?",
-    answers: { a: 'With patience and teamwork.', b: 'By adapting quickly and finding practical solutions.', c: 'With enthusiasm and adaptability.' },
-    clans: { a: 'EmeraldHand', b: 'Grimbone', c: 'BubblegumViolence' }
+    answers: {
+      a: 'With patience and teamwork.',
+      b: 'By adapting quickly and finding practical solutions.',
+      c: 'With enthusiasm and adaptability.'
+    },
+    clans: {
+      a: 'EmeraldHand',
+      b: 'Grimbone',
+      c: 'BubblegumViolence'
+    }
   },
   {
-    question: "What kind of legacy do you want to leave behind?",
-    answers: { a: 'A legacy of kindness and community improvement.', b: 'A legacy of resilience and innovative problem-solving.', c: 'A legacy of exciting experiences and unforgettable moments.' },
-    clans: { a: 'EmeraldHand', b: 'Grimbone', c: 'BubblegumViolence' }
+    question: "What do you want people to say in your funeral?",
+    answers: {
+      a: 'Kind and always wanted to help the community.',
+      b: 'Resilient and always found new ways to solve problems.',
+      c: 'Always sought exciting experiences and unforgettable moments.'
+    },
+    clans: {
+      a: 'EmeraldHand',
+      b: 'Grimbone',
+      c: 'BubblegumViolence'
+    }
   },
   {
     question: "What do you value most in a team?",
-    answers: { a: 'Cooperation and mutual support.', b: 'Adaptability and resourcefulness.', c: 'Creativity and spontaneity.' },
-    clans: { a: 'EmeraldHand', b: 'Grimbone', c: 'BubblegumViolence' }
+    answers: {
+      a: 'Cooperation and mutual support.',
+      b: 'Creativity and spontaneity.',
+      c: 'Adaptability and resourcefulness.'
+    },
+    clans: {
+      a: 'EmeraldHand',
+      b: 'BubblegumViolence',
+      c: 'Grimbone'
+    }
   },
   {
     question: "How do you react to conflict?",
-    answers: { a: 'Seeking a balanced and peaceful resolution.', b: 'Facing it head-on with resilience and innovation.', c: 'Turning it into an opportunity for excitement and change.' },
-    clans: { a: 'EmeraldHand', b: 'Grimbone', c: 'BubblegumViolence' }
+    answers: {
+      a: 'Facing it head-on with resilience and innovation.',
+      b: 'Turning it into an opportunity for excitement and change.',
+      c: 'Seeking a balanced and peaceful resolution.'
+    },
+    clans: {
+      a: 'Grimbone',
+      b: 'BubblegumViolence',
+      c: 'EmeraldHand'
+    }
   },
   {
     question: "What is your preferred role in a group setting?",
-    answers: { a: 'The leader who guides and supports others.', b: 'The strategist who plans and implements practical solutions.', c: 'The entertainer who keeps the group engaged and motivated.' },
-    clans: { a: 'EmeraldHand', b: 'Grimbone', c: 'BubblegumViolence' }
+    answers: {
+      a: 'The leader who guides and supports others.',
+      b: 'The entertainer who keeps the group engaged and motivated.',
+      c: 'The strategist who plans and implements practical solutions.'
+    },
+    clans: {
+      a: 'EmeraldHand',
+      b: 'BubblegumViolence',
+      c: 'Grimbone'
+    }
   },
   // Tie-breaker questions
   {
     question: "If you could change one thing about the world, what would it be?",
-    answers: { a: 'Make the world a more compassionate and caring place.', b: 'Create opportunities for everyone to be self-reliant and resourceful.', c: 'Bring joy and excitement to people’s lives.' },
-    clans: { a: 'EmeraldHand', b: 'Grimbone', c: 'BubblegumViolence' }
+    answers: {
+      a: 'Create opportunities for everyone to be self-reliant and resourceful.',
+      b: 'Bring joy and excitement to people’s lives.',
+      c: 'Make the world a more compassionate and caring place.'
+    },
+    clans: {
+      a: 'Grimbone',
+      b: 'BubblegumViolence',
+      c: 'EmeraldHand'
+    }
   },
   {
     question: "What is your biggest strength?",
-    answers: { a: 'Empathy and the ability to connect with others.', b: 'Resourcefulness and the ability to overcome obstacles.', c: 'Creativity and the ability to inspire others.' },
-    clans: { a: 'EmeraldHand', b: 'Grimbone', c: 'BubblegumViolence' }
+    answers: {
+      a: 'Creativity and the ability to inspire others.',
+      b: 'Resourcefulness and the ability to overcome obstacles.',
+      c: 'Empathy and the ability to connect with others.'
+    },
+    clans: {
+      a: 'BubblegumViolence',
+      b: 'Grimbone',
+      c: 'EmeraldHand'
+    }
   },
   {
     question: "Which quality do you admire most in others?",
-    answers: { a: 'Kindness and the ability to help others.', b: 'Ingenuity and the ability to solve problems.', c: 'Charisma and the ability to entertain.' },
-    clans: { a: 'EmeraldHand', b: 'Grimbone', c: 'BubblegumViolence' }
+    answers: {
+      a: 'Ingenuity and the ability to solve problems.',
+      b: 'Charisma and the ability to entertain.',
+      c: 'Kindness and the ability to help others.'
+    },
+    clans: {
+      a: 'Grimbone',
+      b: 'BubblegumViolence',
+      c: 'EmeraldHand'
+    }
   }
 ];
 
