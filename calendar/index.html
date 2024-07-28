@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaidro Calendar of Activities</title>
+    <style>
+    
+    @font-face {
+    font-family: 'origin';
+    src: url('fonts/OriginTech\ personal\ use.ttf') format('truetype');
+    }
+  /* Custom Font */
+    @font-face {
+    font-family: 'roboto';
+    src: url('fonts/roboto.ttf') format('truetype');
+    }
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(images/background.png); /* Replace with your image URL */
+            background-size: cover; /* Ensures the background covers the entire page */
+            background-position: center; /* Centers the background image */
+            background-repeat: no-repeat; /* Prevents the background from repeating */
+            display: flex;
+            flex-direction: column; /* Align items in a column */
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+        }
+        header {
+            margin-bottom: 20px; /* Space between header and calendar */
+            text-align: center; /* Centers the header text */
+        }
+        .header-title {
+            font-family: 'origin';
+            font-size: 2em; /* Adjusts the font size of the title */
+            color: #ffffff; /* Sets the title color */
+            margin: 0; /* Removes default margin */
+        }
+        .calendar-container {
+            width: 100%;
+            max-width: 800px; /* Adjust as needed */
+            padding: 20px; /* Optional: Add padding around the calendar */
+            background-color: rgba(255, 255, 255, 0.8); /* Optional: Adds a white background with opacity to the calendar container */
+            border-radius: 10px; /* Optional: Adds rounded corners to the container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+            text-align: center; /* Centers the content text */
+        }
+        iframe {
+            width: 100%;
+            height: 600px; /* Adjust height as needed */
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-title">Kaidro Calendar of Activities</div>
+    </header>
+    <div class="calendar-container">
+        <iframe src="https://calendar.google.com/calendar/embed?src=4064b2bec22d8dbe2979cf09faea3f2fd1725c6a046727574ea43cd47615f3da%40group.calendar.google.com&ctz=UTC" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+</body>
+</html>
