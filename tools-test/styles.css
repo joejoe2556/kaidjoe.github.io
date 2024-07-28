@@ -4,10 +4,19 @@
     padding: 0;
     box-sizing: border-box;
   }
-
+  /* Custom Font */
+  @font-face {
+    font-family: 'origin';
+    src: url('fonts/OriginTech\ personal\ use.ttf') format('truetype');
+  }
+  /* Custom Font */
+  @font-face {
+    font-family: 'roboto';
+    src: url('fonts/roboto.ttf') format('truetype');
+  }
   /* Body Styles */
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'roboto', sans-serif;
     background-image: url('images/background.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -42,6 +51,7 @@
   }
 
   .header h1 {
+    font-family: 'origin', sans-serif;
     font-size: 2em;
     margin: 0;
   }
