@@ -1,27 +1,27 @@
-// Example member data for each clan
 const lordsMembers = [
-    { name: "Freak (emerald hand)", imageUrl: "https://cors-anywhere.herokuapp.com/https://x.com/JoeeMars1990/photo" },
-    { name: "Trung", imageUrl: "https://randomuser.me/api/portraits/women/2.jpg" },
-    { name: "CocoBear", imageUrl: "https://randomuser.me/api/portraits/women/2.jpg" },
+    { name: "Freak<br>Emerald hand clan", imageUrl: "https://cors-anywhere.herokuapp.com/https://x.com/JoeeMars1990/photo" },
+    { name: "Trung<br>Grimbone clan", imageUrl: "https://randomuser.me/api/portraits/women/2.jpg" },
+    { name: "CocoBear<br>Bubblegum violence clan", imageUrl: "https://randomuser.me/api/portraits/women/2.jpg" },
 ];
 
 const clan1Members = [
-    { name: "Axieology.ron", imageUrl: "https://cors-anywhere.herokuapp.com/https://x.com/JoeeMars1990/photo" },
     { name: "FFPlz.ron", imageUrl: "https://randomuser.me/api/portraits/women/2.jpg" },
-    { name: "Ghost.ron", imageUrl: "https://randomuser.me/api/portraits/women/2.jpg" },
-    { name: "1478.ron", imageUrl: "https://randomuser.me/api/portraits/women/2.jpg" },
-
+    { name: "Axieology.ron", imageUrl: "https://cors-anywhere.herokuapp.com/https://x.com/JoeeMars1990/photo" },
+    { name: "Kai shoto", imageUrl: "https://randomuser.me/api/portraits/women/2.jpg" },
+    { name: "", imageUrl: "https://randomuser.me/api/portraits/women/2.jpg" },
 
 ];
 
 const clan2Members = [
-    { name: "Member 3", imageUrl: "https://randomuser.me/api/portraits/men/3.jpg" },
-    { name: "Member 4", imageUrl: "https://randomuser.me/api/portraits/women/4.jpg" },
+    { name: "Palmer.ron", imageUrl: "https://randomuser.me/api/portraits/men/3.jpg" },
+    { name: "Drewmeister", imageUrl: "https://randomuser.me/api/portraits/men/3.jpg" },
+    { name: "Jihoz.ron", imageUrl: "https://randomuser.me/api/portraits/men/3.jpg" },
+    { name: "Gabby Dizon", imageUrl: "https://randomuser.me/api/portraits/women/4.jpg" },
 ];
 
 const clan3Members = [
-    { name: "Member 5", imageUrl: "https://randomuser.me/api/portraits/men/5.jpg" },
-    { name: "Member 6", imageUrl: "https://randomuser.me/api/portraits/women/6.jpg" },
+    { name: "Fourx", imageUrl: "https://randomuser.me/api/portraits/men/5.jpg" },
+    { name: "Wyrath", imageUrl: "https://randomuser.me/api/portraits/women/6.jpg" },
 ];
 
 // Function to render members
@@ -39,7 +39,7 @@ function renderMembers(clanId, members) {
 
         const name = document.createElement('div');
         name.classList.add('member-name');
-        name.textContent = member.name;
+        name.innerHTML = `<strong>${member.name}</strong>`; // Make name bold using <strong> tag
         
         memberDiv.appendChild(img);
         memberDiv.appendChild(name);
