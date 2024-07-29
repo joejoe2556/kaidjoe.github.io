@@ -1,7 +1,17 @@
 // Example member data for each clan
+const lordsMembers = [
+    { name: "Freak (emerald hand)", imageUrl: "https://cors-anywhere.herokuapp.com/https://x.com/JoeeMars1990/photo" },
+    { name: "Trung", imageUrl: "https://randomuser.me/api/portraits/women/2.jpg" },
+    { name: "CocoBear", imageUrl: "https://randomuser.me/api/portraits/women/2.jpg" },
+];
+
 const clan1Members = [
-    { name: "Member 1", imageUrl: "https://x.com/JoeeMars1990/photo" },
-    { name: "Member 2", imageUrl: "https://randomuser.me/api/portraits/women/2.jpg" },
+    { name: "Axieology.ron", imageUrl: "https://cors-anywhere.herokuapp.com/https://x.com/JoeeMars1990/photo" },
+    { name: "FFPlz.ron", imageUrl: "https://randomuser.me/api/portraits/women/2.jpg" },
+    { name: "Ghost.ron", imageUrl: "https://randomuser.me/api/portraits/women/2.jpg" },
+    { name: "1478.ron", imageUrl: "https://randomuser.me/api/portraits/women/2.jpg" },
+
+
 ];
 
 const clan2Members = [
@@ -38,6 +48,7 @@ function renderMembers(clanId, members) {
 }
 
 // Render members for each clan
+renderMembers('lords', lordsMembers);
 renderMembers('clan1', clan1Members);
 renderMembers('clan2', clan2Members);
 renderMembers('clan3', clan3Members);
