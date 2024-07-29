@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.join-button-container {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.join-button {
+    font-size: 20px;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.join-button:hover {
+    background-color: #0056b3;
+}
+
+.clan {
+    margin-bottom: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.clan-image {
+    width: 100%; /* Make the clan image width adjust to the grid width */
+    height: auto;
+    margin-bottom: 20px;
+    max-width: 800px; /* Set a maximum width so it does not become too large */
+}
+
+.members-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px; /* Set a maximum width for the grid */
+    margin: 0 auto; /* Center the grid within its container */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-radius: 10px; /* Optional: to round the corners of the grid container */
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.member img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.member-name {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
