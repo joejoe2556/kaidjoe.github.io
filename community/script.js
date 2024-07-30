@@ -7,7 +7,7 @@ const lordsMembers = [
 const clan1Members = [
     { name: "Robert Simons", imageUrl: "images/robert.jpg" },
     { name: "FFPlz.ron", imageUrl: "images/ffplz.jpg" },
-    { name: "Axieology.ron", imageUrl: "images/Axieology.jpg" },
+    { name: "Axieology.ron", imageUrl: "images/axieology.jpg" },
     { name: "Kezia.ron", imageUrl: "images/kez.jpg" },
     { name: "Ghost.ron", imageUrl: "images/ghost.jpg" },
     { name: "SHADR.ron", imageUrl: "images/shadr.jpg" },
