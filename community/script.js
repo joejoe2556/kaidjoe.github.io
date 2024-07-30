@@ -28,6 +28,7 @@ const clan2Members = [
     { name: "droidmentality.ron", imageUrl: "images/droid.png" },
     { name: "orcaetal.ron", imageUrl: "images/orcaetal.png" },
     { name: "Nathan", imageUrl: "images/nathan.jpg" },
+    { name: "Serrad", imageUrl: "images/serrad.png" },
     { name: "Jihoz.ron", imageUrl: "images/jihoz.jpg" },
     { name: "Gabby Dizon", imageUrl: "images/gab.jpg" },
 ];
@@ -38,6 +39,7 @@ const clan3Members = [
     { name: "Wyrath", imageUrl: "images/wyrath.png" },
     { name: "Biku.ron", imageUrl: "images/biku.jpg" },
     { name: "Caine", imageUrl: "images/caine.png" },
+    { name: "KuyaKiko", imageUrl: "images/kuya.png" },
     { name: "Laird", imageUrl: "images/laird.png" },
 
 ];
