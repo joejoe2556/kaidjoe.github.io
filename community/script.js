@@ -5,12 +5,13 @@ const lordsMembers = [
 ];
 
 const clan1Members = [
-    { name: "Robert Simons", imageUrl: "images/robert.jpg" },
+    { name: "Robert Simons<br>Founder", imageUrl: "images/robert.jpg" },
     { name: "FFPlz.ron", imageUrl: "images/ffplz.jpg" },
     { name: "Axieology.ron", imageUrl: "images/axieology.jpg" },
     { name: "Kezia.ron", imageUrl: "images/kez.jpg" },
     { name: "Ghost.ron", imageUrl: "images/ghost.jpg" },
     { name: "SHADR.ron", imageUrl: "images/shadr.jpg" },
+    { name: "Rison.ron", imageUrl: "images/rison.jpg" },
     { name: "roninstudios.ron", imageUrl: "images/ronin.png" },
     { name: "Kai Shoto", imageUrl: "images/kai.png" },
     { name: "Drewmeister", imageUrl: "images/drew.png" },
@@ -34,13 +35,13 @@ const clan2Members = [
 ];
 
 const clan3Members = [
-    { name: "Peggy Chung", imageUrl: "images/peggy.jpg" },
+    { name: "Peggy Chung<br>Founder", imageUrl: "images/peggy.jpg" },
     { name: "Fourx", imageUrl: "images/fourx.jpg" },
     { name: "Wyrath", imageUrl: "images/wyrath.png" },
     { name: "Biku.ron", imageUrl: "images/biku.jpg" },
     { name: "Caine", imageUrl: "images/caine.png" },
     { name: "KuyaKiko", imageUrl: "images/kuya.png" },
-    { name: "Laird", imageUrl: "images/laird.png" },
+    { name: "Laird Shingleton<br>CTO", imageUrl: "images/laird.png" },
 
 ];
 
