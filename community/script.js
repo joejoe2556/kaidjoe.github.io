@@ -25,6 +25,7 @@ const clan1Members = [
 
 const clan2Members = [
     { name: "Palmer.ron", imageUrl: "images/palmer.jpg" },
+    { name: "kaneko", imageUrl: "images/kaneko.png" },
     { name: "GhostWolf", imageUrl: "images/ghostwolf.png" },
     { name: "droidmentality.ron", imageUrl: "images/droid.png" },
     { name: "orcaetal.ron", imageUrl: "images/orcaetal.png" },
