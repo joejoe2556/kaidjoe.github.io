@@ -28,6 +28,7 @@ const clan2Members = [
 const clan3Members = [
     { name: "Peggy Chung", imageUrl: "images/peggy.jpg" },
     { name: "Fourx", imageUrl: "images/fourx.jpg" },
+    { name: "Biku.ron", imageUrl: "images/biku.jpg" },
     { name: "Laird", imageUrl: "images/laird.png" },
 
 ];
