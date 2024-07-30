@@ -1,27 +1,35 @@
 const lordsMembers = [
-    { name: "Freak<br>Emerald hand clan", imageUrl: "https://cors-anywhere.herokuapp.com/https://x.com/JoeeMars1990/photo" },
-    { name: "Trung<br>Grimbone clan", imageUrl: "https://randomuser.me/api/portraits/women/2.jpg" },
-    { name: "CocoBear<br>Bubblegum violence clan", imageUrl: "https://randomuser.me/api/portraits/women/2.jpg" },
+    { name: "Trung<br>Grimbone clan", imageUrl: "images/trung.jpg" },
+    { name: "CocoBear<br>Bubblegum violence clan", imageUrl: "images/cocobear.jpg"},
+    { name: "Freak<br>Emerald hand clan", imageUrl: "images/freak.jpg" },
 ];
 
 const clan1Members = [
-    { name: "FFPlz.ron", imageUrl: "https://randomuser.me/api/portraits/women/2.jpg" },
-    { name: "Axieology.ron", imageUrl: "https://cors-anywhere.herokuapp.com/https://x.com/JoeeMars1990/photo" },
-    { name: "Kai shoto", imageUrl: "https://randomuser.me/api/portraits/women/2.jpg" },
-    { name: "", imageUrl: "https://randomuser.me/api/portraits/women/2.jpg" },
+    { name: "Robert Simons", imageUrl: "images/robert.jpg" },
+    { name: "FFPlz.ron", imageUrl: "images/ffplz.jpg" },
+    { name: "Axieology.ron", imageUrl: "images/Axieology.jpg" },
+    { name: "Kezia.ron", imageUrl: "images/kez.jpg" },
+    { name: "Ghost.ron", imageUrl: "images/ghost.jpg" },
+    { name: "SHADR.ron", imageUrl: "images/shadr.jpg" },
+    { name: "Kai Shoto", imageUrl: "images/kai.png" },
+    { name: "Drewmeister", imageUrl: "images/drew.png" },
+    { name: "Gila.ron", imageUrl: "images/gila.jpg" },
+    { name: "1437", imageUrl: "images/1437.jpg" },
 
 ];
 
 const clan2Members = [
-    { name: "Palmer.ron", imageUrl: "https://randomuser.me/api/portraits/men/3.jpg" },
-    { name: "Drewmeister", imageUrl: "https://randomuser.me/api/portraits/men/3.jpg" },
-    { name: "Jihoz.ron", imageUrl: "https://randomuser.me/api/portraits/men/3.jpg" },
-    { name: "Gabby Dizon", imageUrl: "https://randomuser.me/api/portraits/women/4.jpg" },
+    { name: "Palmer.ron", imageUrl: "images/palmer.jpg" },
+    { name: "GhostWolf", imageUrl: "images/ghostwolf.png" },
+    { name: "Jihoz.ron", imageUrl: "images/jihoz.jpg" },
+    { name: "Gabby Dizon", imageUrl: "images/gab.jpg" },
 ];
 
 const clan3Members = [
-    { name: "Fourx", imageUrl: "https://randomuser.me/api/portraits/men/5.jpg" },
-    { name: "Wyrath", imageUrl: "https://randomuser.me/api/portraits/women/6.jpg" },
+    { name: "Peggy Chung", imageUrl: "images/peggy.jpg" },
+    { name: "Fourx", imageUrl: "images/fourx.jpg" },
+    { name: "Laird", imageUrl: "images/laird.png" },
+
 ];
 
 // Function to render members

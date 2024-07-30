@@ -17,8 +17,8 @@ body {
 .join-button {
     font-size: 20px;
     padding: 15px 30px;
-    background-color: #007bff;
-    color: white;
+    background-color: #e0a82d;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -26,7 +26,7 @@ body {
 }
 
 .join-button:hover {
-    background-color: #0056b3;
+    background-color: #ffffff;
 }
 
 .clan {

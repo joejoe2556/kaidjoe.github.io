@@ -52,6 +52,45 @@
             height: 600px; /* Adjust height as needed */
             border: 0;
         }
+        
+  /* Buy Me Coffee Button Styles */
+  .buy-me-coffee,
+  .copy-text, 
+  .back-to-main-menu {
+    position: fixed;
+    background-color: transparent;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.7em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+
+  .buy-me-coffee:hover,
+  .copy-text:hover, 
+  .back-to-main-menu:hover {
+    background-color: #e0a82d;
+    text-decoration: underline;
+  }
+
+  .buy-me-coffee {
+    bottom: 40px;
+    right: 20px;
+  }
+
+  .copy-text {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .back-to-main-menu {
+    bottom: 40px;
+    left: 20px;
+}
+
+
     </style>
 </head>
 <body>
@@ -61,5 +100,21 @@
     <div class="calendar-container">
         <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FManila&bgcolor=%23F6BF26&src=NDA2NGIyYmVjMjJkOGRiZTI5NzljZjA5ZmFlYTNmMmZkMTcyNWM2YTA0NjcyNzU3NGVhNDNjZDQ3NjE1ZjNkYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F09300" style="border:solid 4px #6c2626" width="400" height="600" frameborder="0" scrolling="no"></iframe>    
     </div>
+    
+    <a href="https://kaidjoe.github.io" class="back-to-main-menu">← Back to Main Menu</a>
+    <a href="https://www.paypal.com/paypalme/josiahmarasigan" class="buy-me-coffee">☕ Buy me coffee</a>
+    <a href="#" id="copy-address-link" onclick="copyAddress(event)" class="copy-text">Click to copy my Ronin address</a>
+ 
+    <script>
+    function copyAddress(event) {
+        event.preventDefault();
+        const address = '0xf5ef36ef681c1c470d2f4337ca2cef1f74d757e8';
+        navigator.clipboard.writeText(address).then(() => {
+            alert('Ronin address copied to clipboard: ' + address);
+        }).catch(err => {
+            console.error('Failed to copy address: ', err);
+        });
+    }
+    </script>
 </body>
 </html> 
