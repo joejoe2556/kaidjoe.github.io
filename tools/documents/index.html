@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> tools </title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="A Comprehensive Guide to the Kaidro Universe">
+    <meta property="og:description" content="Discover what Kaidro is, learn how to download and play the game, explore ways to earn $KDR.">
+    <meta property="og:image" content="https://kaidjoe.github.io/images/preview.png">
+    <meta property="og:url" content="https://kaidjoe.github.io">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="A Comprehensive Guide to the Kaidro Universe">
+    <meta name="twitter:description" content="Discover what Kaidro is, learn how to download and play the game, explore ways to earn $KDR.">
+    <meta name="twitter:image" content="https://kaidjoe.github.io/images/preview.png">
+    <meta name="twitter:site" content="@JoeeMars1990">
+
+</head>
+<body>
+    <div class="header">
+        <h1> Kaidro Library </h1>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h2> What document do you need? </h2>
+            <a href="https://docs.google.com/document/d/1C-gCq3mGDikMhsFaC07GGUsUCeI7zX9zj7QjpcqmtpI/edit"> Synergy 6-27-24 </a>
+            <a href="https://docs.google.com/document/d/1IMSGJEA7bZ-xOXZDdfD8M6YLDd9apgoRUPFCLNy5X70/edit#heading=h.ydq4agswkrn7"> Synergy 3.0 7-12-24 </a>
+            <a href="https://docs.google.com/document/d/1kcEz00KyQa_wvvioSSmyawx9xrRTG-c7VuGwsw-v9IE/edit#heading=h.1mcvfyvt4rj"> Synergy points update 7-30-24 </a>
+            <a href="https://docs.google.com/document/d/1CQ1Yp1eXffEqiQvZGKomoetUOrQ54kITxUWWx0hhyk8/edit#heading=h.29n2igh7ionk "> Spark Suit attributes </a>
+        </div>
+    </div>
+    <a href="https://kaidjoe.github.io" class="back-to-main-menu">← Back to Main Menu</a>
+    <a href="https://www.paypal.com/paypalme/josiahmarasigan" class="buy-me-coffee">☕ Buy me coffee</a>
+    <a href="#" id="copy-address-link" onclick="copyAddress(event)" class="copy-text">Click to copy my Ronin address</a>
+ 
+    <script>
+    function copyAddress(event) {
+        event.preventDefault();
+        const address = '0xf5ef36ef681c1c470d2f4337ca2cef1f74d757e8';
+        navigator.clipboard.writeText(address).then(() => {
+            alert('Ronin address copied to clipboard: ' + address);
+        }).catch(err => {
+            console.error('Failed to copy address: ', err);
+        });
+    }
+    </script>
+</body>
+</html>
