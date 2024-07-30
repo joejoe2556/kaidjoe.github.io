@@ -36,12 +36,13 @@ const clan2Members = [
 
 const clan3Members = [
     { name: "Peggy Chung<br>Founder", imageUrl: "images/peggy.jpg" },
+    { name: "Laird Shingleton<br>CTO", imageUrl: "images/laird.png" },
+    { name: "Roan", imageUrl: "images/roan.png" },
     { name: "Fourx", imageUrl: "images/fourx.jpg" },
     { name: "Wyrath", imageUrl: "images/wyrath.png" },
     { name: "Biku.ron", imageUrl: "images/biku.jpg" },
     { name: "Caine", imageUrl: "images/caine.png" },
     { name: "KuyaKiko", imageUrl: "images/kuya.png" },
-    { name: "Laird Shingleton<br>CTO", imageUrl: "images/laird.png" },
 
 ];
 
