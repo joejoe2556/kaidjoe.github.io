@@ -24,9 +24,11 @@ const clan1Members = [
 ];
 
 const clan2Members = [
+    { name: "GhostWolf<br>Discord Overlord<br>Kaidro team", imageUrl: "images/ghostwolf.png" },
+    { name: "Jayce<br>Audiobook Overlord<br>Kaidro team", imageUrl: "images/jayce.png" },
+    { name: "Libby<br>Audiobook Princess<br>Kaidro team", imageUrl: "images/libby.png" },
     { name: "Palmer.ron", imageUrl: "images/palmer.jpg" },
     { name: "kaneko", imageUrl: "images/kaneko.png" },
-    { name: "GhostWolf", imageUrl: "images/ghostwolf.png" },
     { name: "droidmentality.ron", imageUrl: "images/droid.png" },
     { name: "orcaetal.ron", imageUrl: "images/orcaetal.png" },
     { name: "Nathan", imageUrl: "images/nathan.jpg" },
@@ -37,7 +39,7 @@ const clan2Members = [
 
 const clan3Members = [
     { name: "Peggy Chung<br>Founder", imageUrl: "images/peggy.jpg" },
-    { name: "Laird Shingleton<br>CTO", imageUrl: "images/laird.png" },
+    { name: "Laird Shingleton<br>CTO<br>Kaidro team", imageUrl: "images/laird.png" },
     { name: "Roan", imageUrl: "images/roan.png" },
     { name: "Fourx", imageUrl: "images/fourx.jpg" },
     { name: "Wyrath", imageUrl: "images/wyrath.png" },
