@@ -6,10 +6,10 @@ const lordsMembers = [
 
 const clan1Members = [
     { name: "Robert Simons<br>Founder", imageUrl: "images/robert.jpg" },
+    { name: "Ghost.ron<br>Discord Overlord<br>Kaidro Team", imageUrl: "images/ghost.jpg" },
     { name: "FFPlz.ron", imageUrl: "images/ffplz.jpg" },
     { name: "Axieology.ron", imageUrl: "images/axieology.jpg" },
     { name: "Kezia.ron", imageUrl: "images/kez.jpg" },
-    { name: "Ghost.ron", imageUrl: "images/ghost.jpg" },
     { name: "SHADR.ron", imageUrl: "images/shadr.jpg" },
     { name: "Rison.ron", imageUrl: "images/rison.jpg" },
     { name: "roninstudios.ron", imageUrl: "images/ronin.png" },
@@ -18,6 +18,7 @@ const clan1Members = [
     { name: "Envy", imageUrl: "images/envy.png" },
     { name: "spriteterror", imageUrl: "images/sprite.png" },
     { name: "ruevencil.ron", imageUrl: "images/ruven.png" },
+    { name: "Neslie.ron", imageUrl: "images/neslie.jpg" },
     { name: "Gila.ron", imageUrl: "images/gila.jpg" },
     { name: "1437", imageUrl: "images/1437.jpg" },
 
