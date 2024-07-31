@@ -39,7 +39,21 @@
             <!-- Members of Clan 3 will be inserted here -->
         </div>
     </div>
-
+    <a href="https://kaidjoe.github.io" class="back-to-main-menu">← Back to Main Menu</a>
+    <a href="https://www.paypal.com/paypalme/josiahmarasigan" class="buy-me-coffee">☕ Buy me coffee</a>
+    <a href="#" id="copy-address-link" onclick="copyAddress(event)" class="copy-text">Click to copy my Ronin address</a>
+ 
+    <script>
+    function copyAddress(event) {
+        event.preventDefault();
+        const address = '0xf5ef36ef681c1c470d2f4337ca2cef1f74d757e8';
+        navigator.clipboard.writeText(address).then(() => {
+            alert('Ronin address copied to clipboard: ' + address);
+        }).catch(err => {
+            console.error('Failed to copy address: ', err);
+        });
+    }
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
