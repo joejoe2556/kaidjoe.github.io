@@ -1,0 +1,290 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden; /* Prevents body from being pushed to the left */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #000; /* Adding a background color for better contrast */
+  overflow-x: hidden; /* Ensures no horizontal scroll */
+}
+
+/* Large Title */
+.title {
+  text-align: center;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.title h1 {
+  font-size: 2.5rem; /* Adjust size as needed */
+  color: #fff; /* White text color */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Table of Contents */
+.toc {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  justify-content: center;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  padding: 15px 0;
+  border-radius: 10px;
+  margin: 0 auto 20px;
+  max-width: 100%; /* Ensures the TOC does not overflow */
+}
+
+.toc li {
+  margin: 0 15px;
+}
+
+.toc a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.toc a:hover {
+  background-color: #e0a82d;
+  color: #000;
+  border-radius: 5px;
+}
+
+/* Main Content Sections */
+.section {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 5px auto; /* Centers the sections */
+  max-width: 100%;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+}
+/* Button Container */
+.button-container {
+  margin-top: 20px; /* Space above the buttons */
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center;
+  padding: 10px 0; /* Add padding for spacing */
+}
+
+/* Button Styles */
+.button {
+  display: inline-block;
+  background-color: #e0a82d; /* Button color */
+  color: #000; /* Text color */
+  padding: 10px 20px;
+  margin: 5px 0; /* Space between buttons */
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #000; /* Darker background on hover */
+  color: #e0a82d; /* Lighter text color on hover */
+}
+/* Video Container */
+.video-container {
+  position: relative;
+  width: 100%; /* Ensures the container takes full width of section-content */
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0; /* Ensures the height adjusts based on padding-bottom */
+  overflow: hidden;
+  margin: 10px 0; /* Adjust margin as needed */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensures iframe fills the container */
+  height: 100%; /* Ensures iframe maintains aspect ratio */
+  border: none;
+}
+.section img,
+.section video {
+  max-width: 100%; /* Ensures images and videos scale properly */
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section p {
+  max-width: 100%; /* Ensures paragraphs scale properly */
+  margin: 10px;
+  text-align: justify;
+  text-indent: 2em;
+}
+
+/* Parallax Effect */
+.parallax {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/background.png') no-repeat center center fixed;
+  background-size: cover;
+  z-index: -1;
+  transform: translateZ(-1px) scale(2);
+}
+
+/* Buy Me Coffee Button Styles */
+.buy-me-coffee,
+.copy-text,
+.back-to-main-menu {
+  position: fixed;
+  background-color: transparent;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.7em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.buy-me-coffee:hover,
+.copy-text:hover,
+.back-to-main-menu:hover {
+  background-color: #e0a82d;
+  text-decoration: underline;
+}
+
+.buy-me-coffee {
+  bottom: 40px;
+  right: 20px;
+}
+
+.copy-text {
+  bottom: 20px;
+  right: 20px;
+}
+
+.back-to-main-menu {
+  bottom: 40px;
+  left: 20px;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .section-content {
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center;
+    padding: 10px; /* Ensures proper padding */
+  }
+
+  .section img,
+  .section video,
+  .section p {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 412px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .toc {
+    padding: 10px 0;
+    margin: 0 auto 20px;
+  }
+
+  .toc a {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .section-content {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .toc {
+    padding: 10px 0;
+    margin: 0 auto 20px;
+  }
+
+  .toc a {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .section-content {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .toc {
+    padding: 10px 0;
+    margin: 0 auto 20px;
+  }
+
+  .toc a {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+
+  .section-content {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+}
+
+/* iPad adjustments */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section-content {
+    font-size: 1.1rem;
+    flex-direction: row; /* Places items side by side */
+  }
+
+  .toc a {
+    font-size: 1.1rem;
+    padding: 9px 18px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .section-content {
+    flex-direction: row; /* Places items side by side */
+  }
+}
