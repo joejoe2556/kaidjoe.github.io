@@ -68,20 +68,34 @@ body {
   padding: 10px 20px;
   border-radius: 10px;
   margin: 5px auto; /* Centers the sections */
-  max-width: 100%;
+  max-width: 95%;
 }
 
 .section-content {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center; /* Centers the content horizontally */
+  flex-direction: column;
   flex-wrap: wrap;
   background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 1.5rem;
+  max-width: 100%; /* Allows it to respect the .section max-width */
+  text-align: center; /* Ensures all text is centered */
 }
+
+.section-content h2 {
+  width: 100%; /* Ensures the h2 takes the full width and can be centered */
+}
+.content-image {
+  display: flex;
+  max-width: 80%;
+  height: auto;
+  margin: 10px 0;
+}
+
 /* Button Container */
 .button-container {
   margin-top: 20px; /* Space above the buttons */
