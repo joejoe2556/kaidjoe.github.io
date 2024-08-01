@@ -18,6 +18,7 @@ const clan1Members = [
     { name: "Envy", imageUrl: "images/envy.png" },
     { name: "spriteterror", imageUrl: "images/sprite.png" },
     { name: "ruevencil.ron", imageUrl: "images/ruven.png" },
+    { name: "mindthegab", imageUrl: "images/mindthegab.jpg" },
     { name: "Neslie.ron", imageUrl: "images/neslie.jpg" },
     { name: "Gila.ron", imageUrl: "images/gila.jpg" },
     { name: "1437", imageUrl: "images/1437.jpg" },
