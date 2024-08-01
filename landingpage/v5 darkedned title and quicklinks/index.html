@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joejoe's Complete Kaidro Pocket Guide</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Joejoe's Complete Kaidro Pocket Guide">
+    <meta property="og:description" content="Discover what Kaidro is, learn how to download and play the game, explore ways to earn $KDR.">
+    <meta property="og:image" content="https://kaidjoe.github.io/images/preview.png">
+    <meta property="og:url" content="https://kaidjoe.github.io">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Joejoe's Complete Kaidro Pocket Guide">
+    <meta name="twitter:description" content="Discover what Kaidro is, learn how to download and play the game, explore ways to earn $KDR.">
+    <meta name="twitter:image" content="https://kaidjoe.github.io/images/preview.png">
+    <meta name="twitter:site" content="@JoeeMars1990">
+</head>
+<body>
+    <div class="title">
+        Joejoe's Complete Kaidro Pocket Guide
+    </div>
+    <div class="container">
+        <div class="content">
+            <h2>What do you need?</h2>
+            <a href="https://kaidjoe.github.io/introduction/">What is Kaidro?</a>
+            <a href="https://kaidjoe.github.io/onboarding">I want to play the game! </a>
+            <a href="https://kaidjoe.github.io/kdr/"> How do I earn KDR? </a>
+            <a href="https://kaidjoe.github.io/calendar/">Event calendar</a> 
+            <a href="https://kaidjoe.github.io/tools/">Community tools</a> 
+            <a href="https://kaidjoe.github.io/community"> Kaidro community </a> 
+            <br>
+            <h2>Quick links</h2>
+            <a href="https://docs.google.com/spreadsheets/d/1CbA1acIfyAj60xuMkqe1UHdgiaS7xADWfDuDJQfbziA/edit?gid=1186028314#gid=1186028314">Synergy calculator</a>
+            <a href="https://kaidjoe.github.io/joejoe">joejoe's tweets</a>
+            <a href="https://kaidrology.com">Kaidrology fan site</a>
+        </div>
+    </div>
+    <a href="https://www.paypal.com/paypalme/josiahmarasigan" class="buy-me-coffee">☕ Buy me coffee</a>
+    <a href="#" id="copy-address-link" onclick="copyAddress(event)" class="copy-text">Click to copy my Ronin address</a>
+ 
+    <script>
+    function copyAddress(event) {
+        event.preventDefault();
+        const address = '0xf5ef36ef681c1c470d2f4337ca2cef1f74d757e8';
+        navigator.clipboard.writeText(address).then(() => {
+            alert('Ronin address copied to clipboard: ' + address);
+        }).catch(err => {
+            console.error('Failed to copy address: ', err);
+        });
+    }
+    </script>
+</body>
+</html>
