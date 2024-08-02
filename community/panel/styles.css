@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.panel {
+    position: relative;
+    width: 300px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    flex-shrink: 0;
+}
+
+.panel .title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.panel img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the panel while maintaining aspect ratio */
+}
+
+.panel:hover {
+    transform: scale(1.1);
+}
+
+.panel:hover img {
+    display: block;
+}
