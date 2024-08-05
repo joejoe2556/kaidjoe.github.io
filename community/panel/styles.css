@@ -133,3 +133,32 @@ body {
   bottom: 40px;
   left: 20px;
 }
+
+/* Media Queries for responsiveness */
+@media (min-width: 375px) and (max-width: 667px) {
+    .panel {
+        width: 60vw; /* Adjust for small screens like 375x667 */
+    
+    }
+}
+
+
+@media (min-width: 600px) {
+    .panel {
+        width: 45vw; /* Adjust for medium screens */
+    }
+}
+
+@media (min-width: 900px) {
+    .panel {
+        width: 30vw; /* Adjust for larger screens */
+    }
+}
+
+/* Stop adjusting size after a certain threshold */
+@media (min-width: 1200px) {
+    .panel {
+        width: 300px; /* Fixed width for large screens */
+        height: 800px; /* Ensure height remains consistent */
+    }
+}
