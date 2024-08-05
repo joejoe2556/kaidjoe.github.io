@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    background-image: url('images/background.png');
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
@@ -9,33 +10,65 @@ body {
     height: 100vh;
     overflow: hidden;
 }
-
-.outer-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Custom Font */
+@font-face {
+    font-family: 'roboto';
+    src: url('fonts/roboto.ttf') format('truetype');
+  }
+  
+ 
+  /* Custom Font */
+  @font-face {
+    font-family: 'origin';
+    src: url('fonts/OriginTech\ personal\ use.ttf') format('truetype');
+  }
+  
+.title {
+    font-family: 'origin', sans-serif;
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    overflow-x: auto;
+    background: #000000;
+    text-align: center;
+    padding: 30px;
+    font-weight: normal;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure the title is above other content */
+}
+.outer-container {
+    width: 100%;
+    overflow-x: auto; /* Add horizontal scrolling */
+    overflow-y: hidden; /* Disable vertical scrolling */
+    display: flex;
+    align-items: center;
 }
 
 .container {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
     padding: 10px;
     box-sizing: border-box;
+    width: max-content; /* Ensure container width is determined by its content */
+    margin: 0 auto; /* Center the container within the outer container */
+}
+
+.spacer {
+    flex: 0 0 20px; /* Adjust the spacer width as needed */
 }
 
 .panel {
     position: relative;
     width: 300px; /* Adjust width as needed */
-    height: 400px; /* Adjust height as needed */
+    height: 800px; /* Adjust height as needed */
     margin: 10px;
     background-size: cover;
     background-position: center;
     cursor: pointer;
-    border: 2px solid #ccc;
+    border: none;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
     flex-shrink: 0;
@@ -46,7 +79,7 @@ body {
     bottom: 10px;
     left: 10px;
     right: 10px;
-    background: rgba(0, 0, 0, 0.5);
+    background: none;
     color: #fff;
     text-align: center;
     padding: 5px;
@@ -57,13 +90,46 @@ body {
     display: none;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the panel while maintaining aspect ratio */
+    object-fit: cover;
 }
 
 .panel:hover {
     transform: scale(1.1);
 }
 
-.panel:hover img {
-    display: block;
+/* Buy Me Coffee Button Styles */
+.buy-me-coffee,
+.copy-text,
+.back-to-main-menu {
+  position: fixed;
+  background-color: transparent;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.7em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.buy-me-coffee:hover,
+.copy-text:hover,
+.back-to-main-menu:hover {
+  background-color: #e0a82d;
+  text-decoration: underline;
+}
+
+.buy-me-coffee {
+  bottom: 40px;
+  right: 20px;
+}
+
+.copy-text {
+  bottom: 20px;
+  right: 20px;
+}
+
+.back-to-main-menu {
+  bottom: 40px;
+  left: 20px;
 }
