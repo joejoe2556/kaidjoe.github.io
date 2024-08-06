@@ -107,11 +107,12 @@ body {
 .file-videos {
     margin-top: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 .file-videos iframe {
-    width: 48%;
+    width: 95%;
     height: auto;
     aspect-ratio: 16 / 9; /* Ensures the iframe maintains a 16:9 aspect ratio */
     border: 2px solid #000;
