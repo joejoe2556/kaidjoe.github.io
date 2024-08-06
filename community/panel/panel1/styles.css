@@ -16,7 +16,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    padding: 20px;
+    padding: 0px;
     width: 100%;
     max-width: 1200px;
 }
@@ -138,4 +138,37 @@ body {
 
 .visit-site-button:hover {
     background-color: #0056b3;
+}
+
+@media (min-width: 768px) {
+    .file-content {
+        flex-direction: row;
+    }
+
+    .member-photo {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    .member-details {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .file-header h1 {
+        font-size: 2.5em;
+    }
+
+    .file-header p {
+        font-size: 1.2em;
+    }
+
+    .member-details h2 {
+        font-size: 2em;
+    }
 }
