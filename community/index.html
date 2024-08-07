@@ -3,65 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community Members</title>
+    <title> Community feature </title>
     <link rel="stylesheet" href="styles.css">
-        <!-- Favicon -->
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-        <!-- For PNG or SVG format -->
-        <!-- <link rel="icon" href="path/to/your/favicon.png" type="image/png"> -->
-        <!-- <link rel="icon" href="path/to/your/favicon.svg" type="image/svg+xml"> -->
-        <!-- Open Graph Meta Tags -->
-        <meta property="og:title" content="Joejoe's Complete Kaidro Pocket Guide">
-        <meta property="og:description" content="Discover what Kaidro is, learn how to download and play the game, explore ways to earn $KDR.">
-        <meta property="og:image" content="https://kaidjoe.github.io/images/preview.png">
-        <meta property="og:url" content="https://kaidjoe.github.io">
-        <meta property="og:type" content="website">
-    
-        <!-- Twitter Card Meta Tags -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Joejoe's Complete Kaidro Pocket Guide">
-        <meta name="twitter:description" content="Discover what Kaidro is, learn how to download and play the game, explore ways to earn $KDR.">
-        <meta name="twitter:image" content="https://kaidjoe.github.io/images/preview.png">
-        <meta name="twitter:site" content="@JoeeMars1990">
 </head>
 <body>
-    <div class="join-button-container">
-        <button class="join-button" onclick="window.location.href='https://discord.gg/kaidro'"> Join our discord! </button>
+    <div class="title">
+        Community feature
     </div>
-    <div class="join-button-container">
-        <button class="join-button" onclick="window.location.href='https://kaidjoe.github.io/clantest'"> Take a quiz to know your clan </button>
-    </div>
-    <div class="clan" id="lords">
-        <div class="members-grid" id="lords-members-grid">
-            <div class="clan-image-container">
-                <img src="images/lord.jpg" alt="Lords Clan" class="clan-image">
-            </div>
-            <!-- Members of Lords will be inserted here by JavaScript -->
+        <div class="outer-container">
+        <div class="spacer"></div> <!-- Spacer at the start -->
+        <div class="container">
+            <a href="https://kaidjoe.github.io/community/1of1" class="panel" data-static="images/1of1.png" data-gif="images/panel.gif">
+                <div class="title"> </div>
+            </a>
+            <a href="https://kaidjoe.github.io/community/communitylore" class="panel" data-static="images/communitylore.png" data-gif="images/panel4.gif">
+                <div class="title"></div>
+            </a>
+            <a href="https://kaidjoe.github.io/community/uppercitypresidents" class="panel" data-static="images/uppercitypresidents.png" data-gif="images/panel0.gif">
+                <div class="title"> </div>
+            </a>
+            <a href="https://kaidjoe.githhub.io/community/citizensoftaljor" class="panel" data-static="images/test2.jpg" data-gif="images/panel3.gif">
+                <div class="title"> </div>
+            </a>
         </div>
+        <div class="spacer"></div> <!-- Spacer at the end -->
     </div>
-    <div class="clan" id="clan1">
-        <div class="members-grid">
-            <img src="images/grimbone.png" alt="Clan 1" class="clan-image">
-            <!-- Members of Clan 1 will be inserted here -->
-        </div>
-    </div>
-    <div class="clan" id="clan2">
-        <div class="members-grid">
-            <img src="images/emeraldhand.png" alt="Clan 2" class="clan-image">
-            <!-- Members of Clan 2 will be inserted here -->
-        </div>
-    </div>
-    <div class="clan" id="clan3">
-        <div class="members-grid">
-            <img src="images/bubblegumviolence.png" alt="Clan 3" class="clan-image">
-            <!-- Members of Clan 3 will be inserted here -->
-        </div>
-    </div>
-    <a href="https://kaidjoe.github.io" class="back-to-main-menu">← Back to Main Menu</a>
-    <a href="https://www.paypal.com/paypalme/josiahmarasigan" class="buy-me-coffee">☕ Buy me coffee</a>
-    <a href="#" id="copy-address-link" onclick="copyAddress(event)" class="copy-text">Click to copy my Ronin address</a>
- 
-    <script>
+    
+    <script src="scripts.js"></script>
+</body>
+
+<a href="https://kaidjoe.github.io" class="back-to-main-menu">← Back to Main Menu</a>
+<a href="https://www.paypal.com/paypalme/josiahmarasigan" class="buy-me-coffee">☕ Buy me coffee</a>
+ <a href="#" id="copy-address-link" onclick="copyAddress(event)" class="copy-text">Click to copy my Ronin address</a>
+ <script>
     function copyAddress(event) {
         event.preventDefault();
         const address = '0xf5ef36ef681c1c470d2f4337ca2cef1f74d757e8';
@@ -72,6 +46,4 @@
         });
     }
     </script>
-    <script src="script.js"></script>
-</body>
 </html>
