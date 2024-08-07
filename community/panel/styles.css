@@ -45,6 +45,7 @@ body {
     overflow-y: hidden; /* Disable vertical scrolling */
     display: flex;
     align-items: center;
+    scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
 .container {
@@ -57,7 +58,7 @@ body {
 }
 
 .spacer {
-    flex: 0 0 20px; /* Adjust the spacer width as needed */
+    flex: 0 0 10px; /* Adjust the spacer width as needed */
 }
 
 .panel {
@@ -140,8 +141,24 @@ body {
         width: 60vw; /* Adjust for small screens like 375x667 */
     
     }
+        
+    .title {
+        font-size: 2em; /* Smaller font size for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
 }
 
+@media (min-width: 360px) and (max-width: 740px) {
+    .panel {
+        width: 60vw; /* Adjust for small screens like 375x667 */
+    
+    }
+        
+    .title {
+        font-size: 2em; /* Smaller font size for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
 
 @media (min-width: 600px) {
     .panel {
@@ -160,5 +177,10 @@ body {
     .panel {
         width: 300px; /* Fixed width for large screens */
         height: 800px; /* Ensure height remains consistent */
+    }
+        
+    .title {
+        font-size: 2em; /* Smaller font size for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
     }
 }

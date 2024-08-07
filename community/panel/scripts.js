@@ -2,20 +2,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const panels = document.querySelectorAll('.panel');
 
     panels.forEach(panel => {
-        const staticPath = panel.getAttribute('data-static');
-        const gifPath = panel.getAttribute('data-gif');
-
         const staticImg = document.createElement('img');
-        staticImg.src = staticPath;
-        staticImg.alt = panel.querySelector('.title').innerText;
-        staticImg.classList.add('static-img');
+        staticImg.src = panel.getAttribute('data-static');
+        staticImg.className = 'static-img';
+        panel.appendChild(staticImg);
 
         const gifImg = document.createElement('img');
-        gifImg.src = gifPath;
-        gifImg.alt = panel.querySelector('.title').innerText;
-        gifImg.classList.add('gif-img');
-
-        panel.appendChild(staticImg);
+        gifImg.src = panel.getAttribute('data-gif');
+        gifImg.className = 'gif-img';
         panel.appendChild(gifImg);
 
         panel.addEventListener('mouseover', () => {
@@ -27,5 +21,35 @@ document.addEventListener('DOMContentLoaded', function() {
             staticImg.style.display = 'block';
             gifImg.style.display = 'none';
         });
+    });
+
+    const outerContainer = document.querySelector('.outer-container');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    outerContainer.addEventListener('mousedown', (e) => {
+        isDown = true;
+        outerContainer.classList.add('active');
+        startX = e.pageX - outerContainer.offsetLeft;
+        scrollLeft = outerContainer.scrollLeft;
+    });
+
+    outerContainer.addEventListener('mouseleave', () => {
+        isDown = false;
+        outerContainer.classList.remove('active');
+    });
+
+    outerContainer.addEventListener('mouseup', () => {
+        isDown = false;
+        outerContainer.classList.remove('active');
+    });
+
+    outerContainer.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - outerContainer.offsetLeft;
+        const walk = (x - startX) * 2; //scroll-fast
+        outerContainer.scrollLeft = scrollLeft - walk;
     });
 });
