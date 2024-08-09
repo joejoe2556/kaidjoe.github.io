@@ -27,8 +27,8 @@ const clan1Members = [
 
 const clan2Members = [
     { name: "GhostWolf<br>Discord Overlord<br>Kaidro team", imageUrl: "images/ghostwolf.png" },
-    { name: "Jayce<br>Audiobook Overlord<br>Kaidro team", imageUrl: "images/jayce.PNG" },
-    { name: "Libby<br>Audiobook Princess<br>Kaidro team", imageUrl: "images/libby.PNG" },
+    { name: "Jayce<br>Audiobook Overlord<br>Kaidro team", imageUrl: "images/jayce.png" },
+    { name: "Libby<br>Audiobook Princess<br>Kaidro team", imageUrl: "images/libby.png" },
     { name: "Palmer.ron", imageUrl: "images/palmer.jpg" },
     { name: "kaneko", imageUrl: "images/kaneko.png" },
     { name: "droidmentality.ron", imageUrl: "images/droid.png" },
