@@ -1,3 +1,7 @@
+document.getElementById("enter-button").addEventListener("click", function(event) {
+    event.stopPropagation(); // Prevent click from propagating to panels or background
+    document.getElementById("welcome-overlay").style.display = "none"; // Hide the overlay
+});
 document.addEventListener('DOMContentLoaded', function() {
     const panels = document.querySelectorAll('.panel');
 
