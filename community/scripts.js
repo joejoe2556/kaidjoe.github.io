@@ -1,3 +1,12 @@
+document.getElementById("enter-button").addEventListener("click", function(event) {
+    event.stopPropagation(); // Prevents click from affecting anything underneath
+    document.getElementById("welcome-overlay").style.display = "none"; // Hides the overlay
+});
+
+// Ensure the overlay itself captures any other clicks
+document.getElementById("welcome-overlay").addEventListener("click", function(event) {
+    event.stopPropagation(); // Prevents any clicks from affecting elements underneath
+});
 document.addEventListener('DOMContentLoaded', function() {
     const panels = document.querySelectorAll('.panel');
 
