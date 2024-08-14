@@ -61,7 +61,15 @@ body {
   color: #000;
   border-radius: 5px;
 }
+.twitter-tweet {
+  width: 100% !important; /* Make the tweet width follow the container's width */
+  max-width: 100% !important; /* Ensure it doesn't exceed the container's width */
+  margin: 0 auto; /* Center the tweet horizontally if needed */
+}
 
+.twitter-tweet iframe {
+  width: 100% !important; /* Ensure the iframe inside the tweet also follows the container's width */
+}
 /* Main Content Sections */
 .section {
   position: relative;
