@@ -91,17 +91,29 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 1.5rem;
   max-width: 100%; /* Allows it to respect the .section max-width */
-  text-align: center; /* Ensures all text is centered */
+  text-align: left; /* Ensures all text is centered */
 }
 
 .section-content h2 {
   width: 100%; /* Ensures the h2 takes the full width and can be centered */
+  text-align: center;
 }
 .content-image {
   display: flex;
   max-width: 80%;
   height: auto;
   margin: 10px 0;
+}
+
+.section ul {
+  list-style-type: disc;
+  margin: 10px 0 20px 20px;
+  padding: 0;
+}
+
+.section ul ul {
+  list-style-type: circle;
+  margin-left: 20px;
 }
 
 /* Button Container */
