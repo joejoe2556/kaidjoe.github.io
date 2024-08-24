@@ -224,7 +224,7 @@ body {
     }
         
     .title {
-        font-size: 2em; /* Smaller font size for smaller screens */
+        font-size: 3em; /* Smaller font size for smaller screens */
         padding: 10px; /* Adjust padding for smaller screens */
     }
 }
@@ -261,7 +261,7 @@ body {
     }
         
     .title {
-        font-size: 2em; /* Smaller font size for smaller screens */
+        font-size: 3.5em; /* Smaller font size for smaller screens */
         padding: 10px; /* Adjust padding for smaller screens */
     }
 }
