@@ -33,6 +33,19 @@ const members = [
         website:'',
         },
     // Add more member objects as needed
+    {
+        photo: 'images/ffplz.png',
+        name: 'Identity unknown',
+        alias: 'FFplz',
+        role: 'The Whale',
+        skills: 'Financial prowess',
+        background: "Background information: FFplz'is a renowned collector of sparksuits in the Grimbone clan, holding the largest collection with 313 suits. His obsession with these powerful exosuits has attracted 388 Spirit Guardians, making him a force of legend. His half-Kailantian, half-Trakarian heritage grants him unparalleled expertise in both mysticism and technology, allowing him to safeguard and wield his collection with unmatched precision. While FFpz remains mostly behind the scenes, his presence is felt across Táljor, ensuring the Grimbone clan's survival and protection through his vast arsenal.",
+        video1: 'https://kaidro-prod-nft-metadata.s3.us-east-2.amazonaws.com/nft/mech/6a29a0b40c7f8346fbefd9d2f6f496b2cea8f7369f6222babfee58c40b46cd40.mp4',
+        video2:'https://kaidro-prod-nft-metadata.s3.us-east-2.amazonaws.com/nft/sg/fe26c16411dfcf342ef0941bfb68e6690cfe2a54aee112ab6ef4b34439f92a60.mp4',
+        website:'',
+        },
+    // Add more member objects as needed
+
 ];
 function createMemberCard(member) {
     const template = document.getElementById('file-template');
