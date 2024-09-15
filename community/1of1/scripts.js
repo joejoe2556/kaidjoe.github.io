@@ -41,11 +41,21 @@ const members = [
         skills: 'Financial prowess',
         background: "Background information: FFplz'is a renowned collector of sparksuits in the Grimbone clan, holding the largest collection with 313 suits. His obsession with these powerful exosuits has attracted 388 Spirit Guardians, making him a force of legend. His half-Kailantian, half-Trakarian heritage grants him unparalleled expertise in both mysticism and technology, allowing him to safeguard and wield his collection with unmatched precision. While FFpz remains mostly behind the scenes, his presence is felt across Táljor, ensuring the Grimbone clan's survival and protection through his vast arsenal.",
         video1: 'https://kaidro-prod-nft-metadata.s3.us-east-2.amazonaws.com/nft/mech/6a29a0b40c7f8346fbefd9d2f6f496b2cea8f7369f6222babfee58c40b46cd40.mp4',
-        video2:'https://kaidro-prod-nft-metadata.s3.us-east-2.amazonaws.com/nft/sg/fe26c16411dfcf342ef0941bfb68e6690cfe2a54aee112ab6ef4b34439f92a60.mp4',
+        video2:'images/ffplzsg.mp4',
         website:'',
         },
     // Add more member objects as needed
-
+    {
+        photo: 'images/freak.jpg',
+        name: 'Identity unknown',
+        alias: 'Freak',
+        role: 'The Sweeper, Lord of the Emerald Hand Clan',
+        skills: 'Servant leadership, Financial prowess',
+        background: "Background information: Freak, known as the Sweeper and Lord of the Emerald Hand, is a legend in the clan for his unmatched control over the sparksuit market. Single-handedly driving the trading volume to over 1 million, Freak ensures the floor price of suits never dips, sweeping the market with precision. His mastery in maintaining economic balance has made the Emerald Hand an influential force in both commerce and power in T'aljor. As Lord of the clan, Freak blends his economic brilliance with his Kailantian-Trakarian heritage, guiding the Emerald Hand with strategy and wisdom, ensuring their continued success in a volatile world",
+        video1: 'https://kaidro-prod-nft-metadata.s3.us-east-2.amazonaws.com/nft/mech/7b257cd078618e95bf8a8d61ba6c13a1ebacd0641e025e07997b4a4c236cdaa1.mp4',
+        video2:'images/ehsg.mp4',
+        website:'',
+        },
 ];
 function createMemberCard(member) {
     const template = document.getElementById('file-template');
