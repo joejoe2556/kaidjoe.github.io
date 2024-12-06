@@ -68,7 +68,7 @@ body {
   padding: 10px 20px;
   border-radius: 10px;
   margin: 5px auto; /* Centers the sections */
-  max-width: 100%;
+  max-width: 70%;
 }
 
 .section-content {
@@ -104,6 +104,24 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+/* Ordered List */
+ol {
+  padding-left: 40px; /* Adds space to the left of the numbers */
+  margin: 0; /* Removes default margin */
+}
+
+ol li {
+  margin-bottom: 10px; /* Space between list items */
+  word-wrap: break-word; /* Ensures long words break to the next line */
+}
+
+.section-content ul {
+  padding-left: 20px; /* Additional padding if needed */
+}
+
+.section-content ul li {
+  margin-bottom: 15px;
+}
 .button:hover {
   background-color: #000; /* Darker background on hover */
   color: #e0a82d; /* Lighter text color on hover */
@@ -153,11 +171,22 @@ body {
   z-index: -1;
   transform: translateZ(-1px) scale(2);
 }
+.button-container-fixed {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align to the left */
+  gap: 20px; /* Add space between buttons */
+  z-index: 2; /* Ensure this container is on top */
+}
 
 /* Buy Me Coffee Button Styles */
 .buy-me-coffee,
 .copy-text,
-.back-to-main-menu {
+.back-to-main-menu,
+.back-to-last-page {
   position: fixed;
   background-color: transparent;
   color: #fff;
@@ -171,13 +200,21 @@ body {
 
 .buy-me-coffee:hover,
 .copy-text:hover,
-.back-to-main-menu:hover {
+.back-to-main-menu:hover,
+.back-to-last-page:hover {
   background-color: #e0a82d;
   text-decoration: underline;
 }
 
+  .back-to-last-page {
+    bottom: 60px;
+    left: 20px;
+    z-index: 2;
+    padding: 10px;
+}
+
 .buy-me-coffee {
-  bottom: 40px;
+  bottom: 60px;
   right: 20px;
 }
 
@@ -187,8 +224,10 @@ body {
 }
 
 .back-to-main-menu {
-  bottom: 40px;
+  bottom: 20px;
   left: 20px;
+  z-index: 1;
+  padding: 10px;
 }
 
 /* Responsive Design Adjustments */

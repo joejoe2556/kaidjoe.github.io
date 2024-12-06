@@ -120,37 +120,42 @@
     border-radius: 8px;
   }
 
-  /* Buy Me Coffee Button Styles */
-  .buy-me-coffee,
-  .copy-text {
-    position: fixed;
-    background-color: transparent;
-    color: #fff;
-    padding: 7px 15px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 0.7em;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
-  }
+/* Buy Me Coffee Button Styles */
+.buy-me-coffee,
+.copy-text,
+.back-to-main-menu {
+  position: fixed;
+  background-color: transparent;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.7em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
 
-  .buy-me-coffee:hover,
-  .copy-text:hover {
-    background-color: #e0a82d;
-    text-decoration: underline;
-  }
+.buy-me-coffee:hover,
+.copy-text:hover,
+.back-to-main-menu:hover {
+  background-color: #e0a82d;
+  text-decoration: underline;
+}
 
-  .buy-me-coffee {
-    bottom: 40px;
-    right: 20px;
-  }
+.buy-me-coffee {
+  bottom: 40px;
+  right: 20px;
+}
 
-  .copy-text {
-    bottom: 20px;
-    right: 20px;
-  }
+.copy-text {
+  bottom: 20px;
+  right: 20px;
+}
 
-
+.back-to-main-menu {
+  bottom: 40px;
+  left: 20px;
+}
   /* Responsive Design */
   @media (max-width: 768px) {
     .content {
